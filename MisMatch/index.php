@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +13,7 @@
     <header>
         <div id="header">
             <h1>Mismatch</h1>
-            <form action="">
+            <form method="post">
                 <label for="email">Email</label><label id="labelSenha" for="senha">Senha</label><br>
                 <input type="text" name="emailL" id="emailL" required/>
                 <input type="email" name="senhaL" id="senhaL" required>
@@ -84,9 +88,47 @@
                 ?>
             </select><br>
             <input type="checkbox" name="feminino" value="F" /><span id="f">Feminino</span>
-            <input id="span" type="checkbox" name="Masculino" value="M" /><span id="m">Masculino</span><br><br>
+            <input type="checkbox" name="masculino" value="M" id="span"  /><span id="m">Masculino</span><br><br>
             <input type="submit" name="submint" Value="Criar Conta" class="button">
         </form>
+        <?php
+        require_once 'conexao.php';
+        require_once 'select.php';
+
+        // dados para cadastro da conta
+        if(!empty($_POST["nome"])) {
+            $nome = addslashes($_POST["nome"]);
+            $sobrenome = addslashes($_POST["sobrenome"]);
+            $email = addslashes($_POST["email"]);
+            $reemail = addslashes($_POST["reemail"]);
+            $senha = md5(addslashes($_POST["senha"]));
+            
+            $dia = $_POST["dia"], $mes= $_POST["mes"], $ano = $_POST["ano"];
+            // data de nascimento formatada para cadastro no db
+            $aniver = $ano."-".$mes."-".$dia;
+
+            // selecao de genero
+            if(isset($_POST["feminino"])) {
+                $sexo = $_POST["feminino"];
+            }elseif(isset($_POST["masculino"])) {
+                $sexo = $_POST["masculino"];
+            };
+
+            // consulta se ja existe o email cadastrado no DB
+            if($email == $selEmail) {
+                echo "<p class='p'>Este email ja possue uma conta cadastrada</p>";
+            }else{
+                $query = $pdo->query("INSERT INTO mismatch_user SET firstName = '$nome', lastName = '$sobrenome', gender = '$sexo', birthdate = '$aniver', email = '$email', senha = '$senha' ");
+                 echo "<p class='p'>Parabens Sua conta foi cadastrada</p>";
+
+            }
+        }else{
+            echo "<p class='p'>Preencha os dados cadastrais</p>";
+        }
+
+
+
+        ?>
     </section>
     <footer>
         <div id="footer">Created By Dionathan

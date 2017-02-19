@@ -85,3 +85,10 @@ h2{
     background-color: #D0E17D;
     height: 80px;
 }
+.p{
+    float: right;
+    margin-right: 500px;
+    margin-top: 10px;
+    color: azure;
+    font-size: 30px;
+}
