@@ -1,0 +1,4 @@
+to test this aplication you need :
+1 - one db with name = guitarwars
+2 - one table with name = guitars
+3 - one imageFile to insert in form to add Score
