@@ -4,26 +4,7 @@ body{
     background-image: url("verão.jpg");
     background-size: cover;    
 }
-header{
-    margin-top: -35px;
-    height: 100px;
-    background-color: #D0E17D;
-}
-h1{
-    margin-left: 400px;
-    padding-top: 30px;
-    font-size: 48px;
-    color: #FF9933;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-header form{
-    margin-top: -80px;
-    margin-left: 950px;
-    color: dimgray;
-}
-#labelSenha{
-    margin-left: 140px;
-}
+
 section{
     margin-top: -30px;
     background-color: rgba(222, 222, 222 , 0.3);
@@ -33,14 +14,12 @@ h3{
     padding-top: 60px;
     margin-left: 900px;
     font-size: 30px;
-    color: dimgray;
+    color: aliceblue;
 }
 section form{
     margin-left: 900px;
 }
-section input{
-    height: 40px;
-}
+
 #nome, #sobrenome{
     width: 189px;
     font-size: 22px;
@@ -57,20 +36,7 @@ h2{
     color: dimgray;
 
 }
-#f{
-    margin-top: 15px;
-    margin-right: 920px;
-    float: right;
-}
-#m{
-    margin-top: -33px;
-    margin-right: 830px;
-    float: right;
-}#span{
-    margin-top: -42px;
-    margin-right: 900px;
-    float: right;
-}
+
 .button{
     background-color: #EEE8AA;
     border: 2px solid silver;
@@ -81,9 +47,9 @@ h2{
 
 }
 #footer{
-    margin-top: 17px;
+    margin-top: 0px;
     background-color: #D0E17D;
-    height: 80px;
+    height: 120px;
 }
 .p{
     float: right;

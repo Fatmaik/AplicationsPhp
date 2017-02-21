@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    background-image: url('cora.jpg');
+    background-size: cover;
+}
+#config{
+    
+    margin-left:1010px;
+    width: 193px;
+    height: 92px;
+    background-color: azure;
+    visibility: hidden;
+}
+#editar{
+    margin-top: -19px;
+    margin-left: -40px;
+    list-style-type: none;
+    display: inline-block;
+}
+#editar li{
+    font-size: 20px;
+    padding: 9px;
+    padding-left: 50px;
+    height: 30px;
+    width: 135px;
+    
+    
+}
+#config ul li:hover{
+    background-color: dimgray;
+    color: white;
+    cursor: pointer;
+}
