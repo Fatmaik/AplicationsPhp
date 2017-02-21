@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/headerMaster.css">
+    <script src="js/jquery.js"></script>
     <script src="js/javascript.js"></script>
 </head>
 <body>

@@ -12,7 +12,7 @@ require_once 'headerMaster.php';
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="css/home.css">
-    <script src="js/javascript.js"></script>
+    
 </head>
 <body>
     <div id="config">
@@ -22,10 +22,10 @@ require_once 'headerMaster.php';
         </ul>
     </div>
     
-    
-    <h1>Logado</h1>
     <?php
-    
+    echo "<div id='boxHome'>";
+    echo "<p>teste</p>";
+    echo "</div>";
 
     
     echo $_SESSION['nome'];
