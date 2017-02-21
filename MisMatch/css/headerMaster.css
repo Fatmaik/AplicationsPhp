@@ -48,7 +48,7 @@ header{
 }
 #headerUser{
     float: right;
-    margin-right: 800px;
+    margin-right: 600px;
     margin-top: -80px;
 }
 #nome{
@@ -59,6 +59,6 @@ header{
 #botaoEditar{
     float: right;
     margin-top: -52px;
-    margin-right: -200px;
+    margin-right: -330px;
     cursor: pointer;
 }

@@ -3,14 +3,15 @@ body{
     background-image: url('cora.jpg');
     background-size: cover;
 }
+/*box de configuraçao*/
 #config{
-    
-    margin-left:1010px;
+    margin-left:1360px;
     width: 193px;
     height: 92px;
     background-color: azure;
     visibility: hidden;
 }
+/*lista de opcoes*/
 #editar{
     margin-top: -19px;
     margin-left: -40px;
@@ -20,21 +21,48 @@ body{
 #editar li{
     font-size: 20px;
     padding: 8px;
-   
-    padding-left: 50px;
+   padding-left: 50px;
     height: 30px;
     width: 135px;
-    
-    
 }
-#config ul li:hover{
+#editar li:hover{
     background-color: dimgray;
     color: white;
     cursor: pointer;
 }
+/*a box principal da pagina*/
 #boxHome{
-    margin-top: -50px;
-    margin-left: 450px;
+    margin-top: -70px;
+    margin-left: 550px;
     width: 800px;
     background-color: beige;
+    box-shadow: 3px 3px 3px dimgray;
 }
+/*box que armazena foto do perfil*/
+#boximagemPerfil{
+    padding-top: 25px;
+    padding-left: 15px;
+
+}
+/*foto do perfil*/
+#fotoPerfil{
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    background-color: aqua;
+}
+#nomeCompleto{
+    float: right;
+    margin-right: 280px;
+    font-size: 37px;
+    color: dimgray;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+.infoPessoal{
+    margin-top: -60px;
+    margin-left: 218px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 20px;
+
+}
+

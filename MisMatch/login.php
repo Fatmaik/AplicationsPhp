@@ -14,19 +14,26 @@ if(isset($_POST["emailL"]) && $_POST["emailL"] != "null" && isset($_POST["senhaL
         $_SESSION['nome'] = $info["firstName"];
         $_SESSION['sobrenome'] = $info['lastName'];
         $_SESSION['genero'] = $info['gender'];
-        $_SESSION['aniver'] = $info['birthdate'];
         $_SESSION['cidade'] = $info['city'];
         $_SESSION['estado'] = $info['state'];
         $_SESSION['foto'] = $info['picture'];
-
+        $_SESSION['email'] = $info['email'];
         
-
         if($email == $emailLogin && $senha == $senhaLogin) {
             $_SESSION['logado'] = TRUE;
-            
+                        
             header('Location: home.php');
         }
     }
+
+    // melhor forma que arrumei para armazenar a idade da pessoa na session 
+    $ida = $pdo->query("SELECT (YEAR(CURDATE())-YEAR(birthdate)) - (RIGHT(CURDATE(),5)<RIGHT(birthdate,5)) as idade
+        FROM mismatch_user WHERE email = '$emailLogin' AND senha = '$senhaLogin'");
+    foreach($ida->fetchAll() as $idade) {
+        $_SESSION['idade'] = $idade['idade'];
+    }
+    
+    
     
         
 }
