@@ -23,7 +23,6 @@ header{
     background-color: white;
     border:solid 6px rgba(47, 79, 79, 0.8);
     border-radius:10px;
-    
     width:280px;
     
 }
@@ -36,15 +35,13 @@ header{
 }
 
 #txtBusca{
-  float:left;
-  background-color:transparent;
-  margin-top: 0px;
-  
-   
-  font-size:20px;
-  border:none;
-  height:18px;
-  width:217px;
+    float:left;
+    background-color:transparent;
+    margin-top: 0px;
+    font-size:18px;
+    border:none;
+    height:18px;
+    width:217px;
 }
 #headerUser{
     float: right;

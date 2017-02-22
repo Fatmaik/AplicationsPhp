@@ -70,18 +70,20 @@ body{
     width: 100px;
     margin-left: 220px;
     background-color: #FD8B2A;
-    padding: 6px;
+    padding: 6px 15px 6px 15px;
     border-radius: 8px;
     color: white;
+    box-shadow: 2px 2px dimgray;
 }
 /*botao de sair*/
 .button2{
     width: 100px;
     margin-left: 20px;
     background-color: #FD8B2A;
-    padding: 6px;
+    padding: 6px 20px 6px 20px;
     border-radius: 8px;
     color: white;
+    box-shadow: 2px 2px dimgray;
 }
 /*titulo da area de pessoas a conhecer*/
 #h1{
@@ -95,4 +97,9 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     color: dimgray;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+
 
