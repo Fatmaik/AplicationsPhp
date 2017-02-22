@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+#boxEdit{
+    margin-top: 40px;
+    margin-left: 600px;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px dimgrey;
+    width: 650px;
+    height: 530px;
+    
+}
+#fotoPerfil{
+    padding: 30px;
+    
+}
+#fotoPerfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.inpEdit{
+    
+    margin-top: -160px;
+    margin-left: 210px;
+    
+    
+}
+.inpEdit input{
+    border: hidden;
+    background-color: antiquewhite;
+    height: 40px;
+    width: 250px;
+    
+    padding-left: 15px;
+}
+.button1{
+    
+    margin-left: 0px;
+    
+    background-color: #FD8B2A;
+    padding: 6px 15px 6px 15px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 4px 4px #898989;
+}
+.button2{
+    float: left;
+    width: 100px;
+    margin-top: -24px;
+    margin-left: 480px;
+    background-color: #FD8B2A;
+    padding: 6px 15px 6px 15px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 2px 2px #898989;
+}
+a{
+    
+    text-decoration: none;
+}
+.p{
+    margin-top: 35px;
+    margin-left: 600px;
+}

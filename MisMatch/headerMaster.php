@@ -20,14 +20,7 @@
             echo "<div id='headerUser'>";
             echo "<p id='nome'>".$_SESSION['nome'] . "</p>";
             echo "</div>";
-
-            echo "<div id='botaoEditar'>";
-            echo "<img id='btnEdit' src='css/wheel.png' alt='engrenagem' width='30px'>";
-            
-            echo "</div>";
         ?>
-
-
     </header>
     
 </body>

@@ -11,6 +11,7 @@ if(isset($_POST["emailL"]) && $_POST["emailL"] != "null" && isset($_POST["senhaL
     foreach($sel->fetchAll() as $info) {
         $email = $info['email'];
         $senha = $info['senha'];
+        $_SESSION['id'] = $info['id'];
         $_SESSION['nome'] = $info["firstName"];
         $_SESSION['sobrenome'] = $info['lastName'];
         $_SESSION['genero'] = $info['gender'];
