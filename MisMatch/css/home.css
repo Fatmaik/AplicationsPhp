@@ -40,8 +40,8 @@ body{
 }
 /*box que armazena foto do perfil*/
 #boximagemPerfil{
-    padding-top: 25px;
-    padding-left: 15px;
+    padding-top: 45px;
+    padding-left: 35px;
 
 }
 /*foto do perfil*/
@@ -50,6 +50,7 @@ body{
     width: 20%;
     height: 20%;
     background-color: aqua;
+
 }
 #nomeCompleto{
     float: right;
@@ -63,6 +64,35 @@ body{
     margin-left: 218px;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     font-size: 20px;
+}
+ /*botao de editar perfil*/
+.button1{
+    width: 100px;
+    margin-left: 220px;
+    background-color: #FD8B2A;
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+}
+/*botao de sair*/
+.button2{
+    width: 100px;
+    margin-left: 20px;
+    background-color: #FD8B2A;
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+}
+/*titulo da area de pessoas a conhecer*/
+#h1{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: dimgray;
+    margin-left: 180px;
 
+}
+.pessoas{
+    margin-left: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: dimgray;
 }
 
