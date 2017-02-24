@@ -40,8 +40,8 @@ body{
 }
 /*box que armazena foto do perfil*/
 #boximagemPerfil{
-    padding-top: 45px;
-    padding-left: 35px;
+    padding-top: 125px;
+    padding-left: 65px;
 
 }
 /*foto do perfil*/
@@ -53,15 +53,16 @@ body{
 
 }
 #nomeCompleto{
-    float: right;
-    margin-right: 280px;
+   
+    margin-top: -150px;
+    
     font-size: 37px;
     color: dimgray;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 .infoPessoal{
-    margin-top: -60px;
-    margin-left: 218px;
+    margin-top: -180px;
+    margin-left: 318px;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     font-size: 20px;
 }
@@ -82,11 +83,11 @@ body{
     width: 100px;
     margin-left: 20px;
     background-color: #FD8B2A;
-
     padding: 6px 20px 6px 20px;
     border-radius: 8px;
     color: white;
     box-shadow: 2px 2px dimgray;
+    cursor: pointer;
 
 }
 /*titulo da area de pessoas a conhecer*/
@@ -105,6 +106,7 @@ body{
 a{
     color: white;
     text-decoration: none;
+    
 }
 
 

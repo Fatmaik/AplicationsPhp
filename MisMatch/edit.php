@@ -1,9 +1,16 @@
 <?php
+// pagina de edicao de dados alteracao de nome, email etc...
 session_start();
 require_once 'conexao.php';
 require_once 'headerMaster.php';
+// caso nao houver ninguem logado e alguem tentar acessar esta pagina 
+// pela url o mesmo e direcinado para o index
+if($_SESSION['logado'] != TRUE) {
+    header('Location: index.php');
+};
 
 $i = $_SESSION['id'];
+echo $i;
 
 if(isset($_POST["submit"])) {
     $nome = addslashes($_POST['nome']);
@@ -12,15 +19,9 @@ if(isset($_POST["submit"])) {
     $estado = addslashes($_POST['estado']);
     $email = addslashes($_POST['email']);
 
-    
-    $sel = $pdo->query("UPDATE mismatch_user SET firstName = '$nome', lastName = '$sobrenome' ,
+    $pdo->query("UPDATE mismatch_user SET firstName = '$nome', lastName = '$sobrenome' ,
                         city = '$cidade', state = '$estado', email = '$email' WHERE id = '$i' ");
-    
     echo "<p class='p'>Alteração Concluida</p>";
-        
-
-    
-    
 }else{
     echo "<p class='p'>Informe os dados que deseja alterar</p>";
 }
@@ -47,10 +48,7 @@ if(isset($_POST["submit"])) {
                 Cidade <input type="text" name="cidade" require placeholder= <?php echo $_SESSION['cidade']?>><hr><br>
                 Estado <input type="text" name="estado"require  placeholder= <?php echo $_SESSION['estado']?>><hr><br>
                 
-                
-
                 <a class="button1" href="home.php">Cancelar</a>
-                
             </div>
             <input class="button2" type="submit" name="submit" value="Salvar">
         </div>

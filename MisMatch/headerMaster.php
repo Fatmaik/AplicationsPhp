@@ -16,12 +16,9 @@
             <img src="css/busca2.png" alt="busca" id="busca">
         </div>
         
-        <?php
-            echo "<div id='headerUser'>";
-            echo "<p id='nome'>".$_SESSION['nome'] . "</p>";
-            echo "</div>";
-        ?>
-    </header>
-    
+        <div id="headerUser">
+            <p id="nome"> <?php echo $_SESSION['nome']?></p>
+        </div>
+      </header>
 </body>
 </html>

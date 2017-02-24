@@ -1,6 +1,7 @@
 <?php
 
 require_once 'login.php';
+require_once 'select.php';
 ?>
 
 <!DOCTYPE html>
@@ -116,6 +117,7 @@ require_once 'login.php';
         }else{
             echo "<p class='p'>Preencha os dados cadastrais</p>";
         }
+        
 
         ?>
     </section>

@@ -22,21 +22,23 @@ if(isset($_POST["emailL"]) && $_POST["emailL"] != "null" && isset($_POST["senhaL
         
         if($email == $emailLogin && $senha == $senhaLogin) {
             $_SESSION['logado'] = TRUE;
-                        
             header('Location: home.php');
+        }else{
+            $_SESSION['logado'] = TRUE;
+            echo "<p id='msgLogin1'>Informe Email e senha corretos</p>";
         }
     }
-
     // melhor forma que arrumei para armazenar a idade da pessoa na session 
     $ida = $pdo->query("SELECT (YEAR(CURDATE())-YEAR(birthdate)) - (RIGHT(CURDATE(),5)<RIGHT(birthdate,5)) as idade
         FROM mismatch_user WHERE email = '$emailLogin' AND senha = '$senhaLogin'");
     foreach($ida->fetchAll() as $idade) {
         $_SESSION['idade'] = $idade['idade'];
     }
-    
-    
-    
-        
+}else{
+    // valor em branco caso nao possua nenhuma conta logada , 
+    // o valor nulo serve para a Session_destroy() acontecer sem haver erros na pagina de login
+    // pois esta pagina recebe valor do id para comparar emails ja cadastrados
+    $_SESSION['id'] = "";
 }
 ?>
 <link rel="stylesheet" href="css/login.css">
