@@ -19,6 +19,9 @@ if(isset($_POST["emailL"]) && $_POST["emailL"] != "null" && isset($_POST["senhaL
         $_SESSION['estado'] = $info['state'];
         $_SESSION['foto'] = $info['picture'];
         $_SESSION['email'] = $info['email'];
+        $_SESSION['pic'] = $info['picture'];
+
+        
         
         if($email == $emailLogin && $senha == $senhaLogin) {
             $_SESSION['logado'] = TRUE;

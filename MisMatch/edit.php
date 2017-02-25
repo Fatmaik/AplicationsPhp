@@ -18,8 +18,14 @@ if(isset($_POST["submit"])) {
     $estado = addslashes($_POST['estado']);
     $email = addslashes($_POST['email']);
 
+    $image = $_FILES['imageEdit'];
+    $imgname= $image['name'];
+
+    move_uploaded_file($image['tmp_name'], "imagesPerf/" . $imgname);
+    
+
     $pdo->query("UPDATE mismatch_user SET firstName = '$nome', lastName = '$sobrenome' ,
-                        city = '$cidade', state = '$estado', email = '$email' WHERE id = '$i' ");
+                        city = '$cidade', state = '$estado', email = '$email' picture = '$imgname' WHERE id = '$i' ");
     echo "<p class='p'>Alteração Concluida</p>";
 }else{
     echo "<p class='p'>Informe os dados que deseja alterar</p>";
@@ -37,10 +43,34 @@ if(isset($_POST["submit"])) {
     <form method="post" enctype="multipart/form-data">
         <div id="boxEdit">
             <div id="fotoPerfil">
-                <img src="css/fotoPerfil/perfilNull.jpg" alt="foto">
-                <label for="imageEdit">Select a avatar</label>
-                <input type="file" name="imageEdit" id="imageEdit">
-            
+                <?php
+                
+                $img = $_SESSION['pic'];
+                
+                if($_SESSION['pic']) {
+                    echo "<img id='fotoPerfilAll2' src='imagesPerf/".  $img. "'alt='foto de perfil'>";
+                }else{
+                    echo "<img id='fotoPerfilAll1' src='css/fotoPerfil/perfilNull.jpg' alt='foto de perfil'>";
+                    
+                }
+
+                // if(isset($_FILES['imageEdit'])) {
+                //     echo "<img src='imagesPerf/'" . $imgname .  "alt='foto' id='notnull'>";
+                //     echo "<label for='imageEdit'>Select a avatar</label>";
+                //     echo "<input type='file' name='imageEdit' id='imageEdit'>";
+                //     echo "sim";
+                    
+                // }else{
+                    
+                //     echo "<img src='imagesPerf/perfilNull.jpg' alt='foto' id='null'>";
+                //     echo "<label for='imageEdit'>Select a avatar</label>";
+                //     echo "<input type='file' name='imageEdit' id='imageEdit'>";
+                //     echo "nao";
+
+                // }
+                ?>
+                
+        
 
             </div>
 

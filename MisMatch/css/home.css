@@ -108,6 +108,20 @@ a{
     text-decoration: none;
     
 }
+#fotoPerfilAll2{
+    float: left;
+    margin-left: -150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#fotoPerfilAll1{
+    float: left;
+    margin-left: -150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 
 
 

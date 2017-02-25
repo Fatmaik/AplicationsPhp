@@ -25,8 +25,14 @@ require_once 'headerMaster.php';
     </div>
     <div id='boxHome'>
         <div id='boximagemPerfil'>
-            <img id='fotoPerfil' src='css/fotoPerfil/perfilNull.jpg' alt='foto de perfil'>
+            <?php
             
+            if(isset($_SESSION['pic'])) {
+                echo "<img id='fotoPerfil' src='imagesPerf/".  $_SESSION['pic'] . "'alt='foto de perfil'>";
+            }else{
+                echo "<img id='fotoPerfil' src='css/fotoPerfil/perfilNull.jpg' alt='foto de perfil'>";
+            }
+            ?>
         </div>
         
         <div class='infoPessoal'>
@@ -35,6 +41,7 @@ require_once 'headerMaster.php';
             <p>Cidade: <?php echo $_SESSION['cidade'] ?> </p>
             <p>Estado: <?php echo $_SESSION['estado'] ?> </p>
             <p>Email: <?php echo $_SESSION['email'] ?> </p>
+            
         </div><br>
             
         
@@ -48,6 +55,15 @@ require_once 'headerMaster.php';
             $sel = $pdo->query("SELECT * FROM mismatch_user");
             foreach($sel->fetchAll() as $info) {
                 $id = $info['id'];
+                
+                $img = $info['picture'];
+                $_SESSION['image'] = $img;
+                
+                if(($img) == NULL) {
+                    echo "<img id='fotoPerfilAll1' src='css/fotoPerfil/perfilNull.jpg' alt='foto de perfil'>";
+                }else{
+                    echo "<img id='fotoPerfilAll2' src='imagesPerf/".  $img . "'alt='foto de perfil'>";
+                }
             ?>
           
         <div id='boxTodos'>
@@ -59,7 +75,13 @@ require_once 'headerMaster.php';
             foreach($ida->fetchAll() as $idade) {
                 $i = $idade['idade'];
                 echo "<p>Idade: " . $i . " Anos</p>";
+                
+                
+            
+                
             }
+
+            
             ?>
             <p>Cidade: <?php echo $info['city'] ?> </p>
             <p>Estado: <?php echo $info['state'] ?></p>
