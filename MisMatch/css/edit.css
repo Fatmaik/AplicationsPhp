@@ -24,7 +24,7 @@ body{
 .inpEdit{
     
     margin-top: -160px;
-    margin-left: 210px;
+    margin-left: 230px;
     
     
 }
@@ -64,4 +64,18 @@ a{
 .p{
     margin-top: 35px;
     margin-left: 600px;
+}
+#imageEdit{
+    float: right;
+    margin-top: 0px;
+    margin-right: 300px;
+    display: none;
+}
+label{
+    float: right;
+    margin-top: 0px;
+    margin-right: 465px;
+}
+label:hover{
+    color: steelblue;
 }

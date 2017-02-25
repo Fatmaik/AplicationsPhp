@@ -9,9 +9,8 @@ if($_SESSION['logado'] != TRUE) {
     header('Location: index.php');
 };
 
+// id cadastrado no banco de dados
 $i = $_SESSION['id'];
-echo $i;
-
 if(isset($_POST["submit"])) {
     $nome = addslashes($_POST['nome']);
     $sobrenome = addslashes($_POST['sobrenome']);
@@ -35,10 +34,14 @@ if(isset($_POST["submit"])) {
     <link rel="stylesheet" href="css/edit.css">
 </head>
 <body>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <div id="boxEdit">
             <div id="fotoPerfil">
                 <img src="css/fotoPerfil/perfilNull.jpg" alt="foto">
+                <label for="imageEdit">Select a avatar</label>
+                <input type="file" name="imageEdit" id="imageEdit">
+            
+
             </div>
 
             <div class="inpEdit">
