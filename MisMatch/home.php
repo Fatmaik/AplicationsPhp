@@ -5,12 +5,11 @@ session_start();
 if($_SESSION['email'] == "null" && $_SESSION['logado'] != TRUE) {
     header('Location: index.php');
 }
-
 require_once 'conexao.php';
 require_once 'headerMaster.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -29,6 +28,7 @@ require_once 'headerMaster.php';
             
             if(isset($_SESSION['pic'])) {
                 echo "<img id='fotoPerfil' src='imagesPerf/".  $_SESSION['pic'] . "'alt='foto de perfil'>";
+            
             }else{
                 echo "<img id='fotoPerfil' src='css/fotoPerfil/perfilNull.jpg' alt='foto de perfil'>";
             }
@@ -44,7 +44,6 @@ require_once 'headerMaster.php';
             
         </div><br>
             
-        
         <a class="button1" href="edit.php">Edit Profile</a>
         <a class="button2" href="index.php">Exit </a><br><br><br><hr>
     
@@ -56,12 +55,12 @@ require_once 'headerMaster.php';
             foreach($sel->fetchAll() as $info) {
                 $id = $info['id'];
                 
+                // nome da imagem para armazenar na tag img
                 $img = $info['picture'];
-                $_SESSION['image'] = $img;
-                
                 if(($img) == NULL) {
                     echo "<img id='fotoPerfilAll1' src='css/fotoPerfil/perfilNull.jpg' alt='foto de perfil'>";
                 }else{
+                    // echo "<img id='fotoPerfilAll2' src='imagesPerf/".  $img . "'alt='foto de perfil'>";
                     echo "<img id='fotoPerfilAll2' src='imagesPerf/".  $img . "'alt='foto de perfil'>";
                 }
             ?>
@@ -75,22 +74,14 @@ require_once 'headerMaster.php';
             foreach($ida->fetchAll() as $idade) {
                 $i = $idade['idade'];
                 echo "<p>Idade: " . $i . " Anos</p>";
-                
-                
-            
-                
             }
-
-            
             ?>
             <p>Cidade: <?php echo $info['city'] ?> </p>
             <p>Estado: <?php echo $info['state'] ?></p>
             <p>Email: <?php echo $info['email'] ?></p><br><br>
         </div>
-        
         <?php
         }
-        
         ?>
     </div>
 

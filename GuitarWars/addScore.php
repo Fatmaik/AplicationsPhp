@@ -24,7 +24,7 @@
 
             // select nome e score para comparar , logo abaixo
             $sql = $pdo->query("SELECT * FROM guitars WHERE nome='$name' AND score='$score'");
-            // recevendo o nome e score para comparacao
+            // recevendo o nome e score para comparacao da existencia do mesmo nome com a mesma pontuacao
             foreach($sql->fetchAll() as $info) {
                 $n = $info["nome"];
                 $s = $info["score"];

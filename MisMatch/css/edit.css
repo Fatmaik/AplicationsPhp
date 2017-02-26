@@ -4,7 +4,7 @@ body{
 }
 
 #boxEdit{
-    margin-top: 40px;
+    margin-top:-190px;
     margin-left: 600px;
     background-color: antiquewhite;
     box-shadow: 2px 2px dimgrey;
@@ -13,27 +13,37 @@ body{
     
 }
 #fotoPerfil{
-    padding: 30px;
-    
+    margin-left:620px;
+    margin-top:60px;
 }
-#fotoPerfil img{
+#fotoPerfil #fotoPerfilAll1{
+    
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    
+}
+#fotoPerfil2{
+    margin-left:620px;
+    padding-top:160px;
+}
+#fotoPerfil2 #fotoPerfilAll2{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
 }
 .inpEdit{
     
-    margin-top: -150px;
-    margin-left: 230px;
-    
-    
+    padding-top: 60px;
+    margin-left: 200px;
 }
 .inpEdit input{
     border: hidden;
     background-color: antiquewhite;
     height: 40px;
-    width: 250px;
-    
+    width: 150px;
     padding-left: 15px;
 }
 .button1{
@@ -62,20 +72,19 @@ a{
     text-decoration: none;
 }
 .p{
-    margin-top: 35px;
+    float: left;
+    margin-top: -305px;
     margin-left: 600px;
 }
-#imageEdit{
-    float: right;
-    margin-top: 0px;
-    margin-right: 300px;
-    display: none;
-}
+
 label{
     float: right;
-    margin-top: 0px;
-    margin-right: 465px;
+    margin-top: -280px;
+    margin-right: 505px;
 }
 label:hover{
     color: steelblue;
+}
+#imageEdit{
+    display: none;
 }

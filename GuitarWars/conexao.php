@@ -1,7 +1,7 @@
 <?php
 $dsn = 'mysql:dbname=guitarwars;host=localhost';
 $dbuser = "root";
-$dbpass = "********"; // your Password
+$dbpass = "rancid"; // your Password
 
 try{
     $pdo = new PDO($dsn, $dbuser, $dbpass);
