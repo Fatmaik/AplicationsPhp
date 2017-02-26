@@ -2,7 +2,6 @@
 session_start();
 require_once 'conexao.php';
 
-
 if(isset($_POST["emailL"]) && $_POST["emailL"] != "null" && isset($_POST["senhaL"]) && $_POST["senhaL"] != "null" ) {
     $emailLogin = addslashes($_POST["emailL"]);
     $senhaLogin = md5(addslashes($_POST["senhaL"]));
@@ -21,25 +20,24 @@ if(isset($_POST["emailL"]) && $_POST["emailL"] != "null" && isset($_POST["senhaL
         $_SESSION['email'] = $info['email'];
         $_SESSION['pic'] = $info['picture'];
 
-        
-        
         if($email == $emailLogin && $senha == $senhaLogin) {
+            // session logado sera ultilisada para identificar se existe alguem logado
+            // se nao existir o script que tentar ser acessado ira redirecionar para pagina de login
             $_SESSION['logado'] = TRUE;
             header('Location: home.php');
         }else{
-            $_SESSION['logado'] = TRUE;
             echo "<p id='msgLogin1'>Informe Email e senha corretos</p>";
         }
     }
     // melhor forma que arrumei para armazenar a idade da pessoa na session 
     $ida = $pdo->query("SELECT (YEAR(CURDATE())-YEAR(birthdate)) - (RIGHT(CURDATE(),5)<RIGHT(birthdate,5)) as idade
-        FROM mismatch_user WHERE email = '$emailLogin' AND senha = '$senhaLogin'");
+            FROM mismatch_user WHERE email = '$emailLogin' AND senha = '$senhaLogin'");
     foreach($ida->fetchAll() as $idade) {
         $_SESSION['idade'] = $idade['idade'];
     }
 }else{
     // valor em branco caso nao possua nenhuma conta logada , 
-    // o valor nulo serve para a Session_destroy() acontecer sem haver erros na pagina de login
+    // o valor nulo serve para a Session_destroy() executar sem haver erros na pagina de login
     // pois esta pagina recebe valor do id para comparar emails ja cadastrados
     $_SESSION['id'] = "";
 }

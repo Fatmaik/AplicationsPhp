@@ -112,13 +112,8 @@ require_once 'select.php';
             }else{
                 $query = $pdo->query("INSERT INTO mismatch_user SET firstName = '$nome', lastName = '$sobrenome', gender = '$sexo', birthdate = '$aniver', email = '$email', senha = '$senha' ");
                  echo "<p class='p'>Parabens Sua conta foi cadastrada</p>";
-
             }
-        }else{
-            echo "<p class='p'>Preencha os dados cadastrais</p>";
-        }
-        
-
+        }else{ echo "<p class='p'>Preencha os dados cadastrais</p>"; }
         ?>
     </section>
     <footer>
