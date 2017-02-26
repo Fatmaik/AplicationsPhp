@@ -2,7 +2,7 @@
 session_start();
 // caso nao houver ninguem logado e alguem tentar acessar esta pagina 
 // pela url o mesmo e direcinado para o index
-if($_SESSION['email'] == "null" && $_SESSION['logado'] != TRUE) {
+if($_SESSION['logado'] != TRUE) {
     header('Location: index.php');
 }
 require_once 'conexao.php';
@@ -44,8 +44,11 @@ require_once 'headerMaster.php';
             
         </div><br>
             
+        
         <a class="button1" href="edit.php">Edit Profile</a>
-        <a class="button2" href="index.php">Exit </a><br><br><br><hr>
+        <a class="button2" href="sessionOut.php" >Exit </a><br><br><br><hr>
+           
+        
     
         <h1 id='h1'>People you might want to meet.</h1><br>
     
