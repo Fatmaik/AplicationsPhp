@@ -26,7 +26,7 @@ require_once 'headerMaster.php';
         <div id='boximagemPerfil'>
             <?php
             
-            if(isset($_SESSION['pic'])) {
+            if(isset($_SESSION['pic']) && !empty($_SESSION['pic'])) {
                 echo "<img id='fotoPerfil' src='imagesPerf/".  $_SESSION['pic'] . "'alt='foto de perfil'>";
             
             }else{

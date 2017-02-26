@@ -12,7 +12,7 @@ if($_SESSION['logado'] != TRUE) {
 // id cadastrado no banco de dados
 $i = $_SESSION['id'];
 
-echo $_SESSION['email'];
+
 if(isset($_POST["submit"])) {
     $nome = addslashes($_POST['nome'])?$_POST['nome']:$_SESSION['nome'];
     $sobrenome = addslashes($_POST['sobrenome'])?$_POST['sobrenome']:$_SESSION['sobrenome'];
@@ -38,6 +38,8 @@ if(isset($_POST["submit"])) {
     
     if(!empty($imgname)) {
         echo "<div id='fotoPerfil2'><img id='fotoPerfilAll2' src='imagesPerf/".  $imgname . "'alt='foto de perfil'></div>";
+    }else{
+        echo "<div id='fotoPerfil'><img id='fotoPerfilAll1' src='css/fotoPerfil/perfilNull.jpg' alt='foto de perfil'></div>";
     }
     
     
@@ -46,7 +48,7 @@ if(isset($_POST["submit"])) {
                         city = '$cidade', state = '$estado', email = '$email', picture = '$imgname' WHERE id = '$i' ");
     echo "<p class='p'>Alteração Concluida</p>";
 }else{
-    echo "<p class='p'>Informe os dados que deseja alterar</p>";
+    echo "<p class='p'>Alterou os dados com sucesso</p>";
     echo "<div id='fotoPerfil'><img id='fotoPerfilAll1' src='css/fotoPerfil/perfilNull.jpg' alt='foto de perfil'></div>";
 }
 
@@ -68,7 +70,7 @@ if(isset($_POST["submit"])) {
                 Cidade <input type="text" name="cidade" require placeholder= <?php echo $_SESSION['cidade']?>><hr><br>
                 Estado <input type="text" name="estado"require  placeholder= <?php echo $_SESSION['estado']?>><hr><br>
                 
-                <a class="button1" href="home.php">Cancelar</a>
+                <a class="button1" href="home.php">Retornar</a>
             </div>
             <label for="imageEdit">Select a avatar</label>
             <input type="file" name="imageEdit" id="imageEdit">
