@@ -1,7 +1,8 @@
 body{
     margin: 0px;
 }
-header{
+/*inicio de estilo do header*/
+.cadPed{
     background-color: olivedrab;
     height: 40px;
 }
@@ -17,23 +18,28 @@ header{
     padding-left: 180px;
     margin-top: -19px;
 }
+/*fim do estilo do header*/
+
+/*inicio do estilo da Section*/
+section{
+    /*background-color: azure;*/
+}
 .logo{
     margin-left: 350px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .campoBusca{
-    float: left;
     width: 500px;
     height: 50px;
     background-color: white;
     margin-left: 650px;
-    margin-top: -80px;
+    margin-top: -65px;
     border: 3px solid silver;
     border-radius: 20px;
 }
 .procura{
     margin-left: 20px;
-    margin-top: 3px;
+    margin-top: 5px;
     width: 25pc;
     height: 40px;
     border: 1px solid white;
@@ -48,13 +54,68 @@ header{
     margin-left: 450px;
     height: 40px;
     outline:none
+}
+ul{
+    margin-top: 40px;
+    margin-left: 400px;
+    list-style-type: none;
+    display: inline-block;  
+}
+li{
+    float: left;  
+}
+#medic{   
+    margin-top: 10px;
+    margin-left: 2px;
+    color: slategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.imgSau{
+    padding-left: 50px;
+    padding-top: 3px;
+}
+#saude{   
+    margin-top: 10px;
+    margin-left: -8px;
+    color: slategrey;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
-/*
-.lupa{
+#beleza{
+    margin-top: 10px;
+    margin-left: 3px;
+    color: slategrey;
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    float: left;
-    margin-left: 1090px;
-    margin-top: -73px;
+}
+.imgBel{
+    margin-top: 3px;
+    margin-left: 50px;
+}
+/*fim do estilo do Section*/
+
+/*começo do estilo do Article*/
+.article{
+   
+    background-color: aquamarine;
+}
+#boxArticle{
+    margin-top: 10px;
+    margin-left: 400px;
+    width: 700px;
+    background-color: antiquewhite;
+}
+#boxArticle img{
+    margin-top: 10px;
+}
+#boxArticle p{
+    padding: 20px;
+}
+#hr{
     
-}*/
+    height: 4px;
+    background-color: olivedrab;
+}
+
+/*fim do estilo do Menu*/
