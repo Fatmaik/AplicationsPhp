@@ -10,7 +10,6 @@
 <body>
     <header>
         <h5>Mismatch</h5>
-        
         <div id="boxBusca">
             <input type="text" name="procurar" id="txtBusca" placeholder=" Buscar..."><br>
             <img src="css/busca2.png" alt="busca" id="busca">

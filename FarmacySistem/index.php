@@ -6,16 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FarmacySistem</title>
     <link rel="stylesheet" href="css/EstiloIndex/estilo.css">
+    <script src="js/Jsindex/jquery.js"></script>
+    <script src="js/Jsindex/javascript.js"></script>
 </head>
 <body>
     <header>ESCOLHA A OPÇÂO DE ACESSO:</header>
 
     <article>
-        <a href=""><img src="css/EstiloIndex/farmacia.png" alt="Site"></a>
-        <a href=""><img src="css/EstiloIndex/loja.png" alt="loja"></a>
-
-        
-        
+        <a class="Site" href=""><img src="css/EstiloIndex/farmacia.png" alt="Site"></a>
+        <a class="LV" href=""><img src="css/EstiloIndex/loja.png" alt="loja"></a>
     </article>
 </body>
 </html>

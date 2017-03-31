@@ -5,7 +5,7 @@ body{
 header{
     background-color:#008B00;
     margin-top: 200px;
-    margin-left: 550px;
+    margin-left: 520px;
     font-size: 25px;
     color: azure;
     padding: 10px;
@@ -16,7 +16,7 @@ header{
 }
 article{
     margin-top: -6px;
-    margin-left: 550px;
+    margin-left: 520px;
     background-color: white;
     width: 700px;
     height: 200px;
