@@ -6,10 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LojaVirtual</title>
     <link rel="stylesheet" href="css/estiloLV/estilo.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/javascript.js"></script>
+    <script src="js/JsLV/jquery.js"></script>
+    <script src="js/JsLV/javascript.js"></script>
 </head>
 <body>
-    <p>test</p>
+    <header>
+        <div class="pedidos">Meus Pedidos</div>
+        <div class="cadastro">Meu Cadastro</div>
+    </header>
+    <section>
+        <img class="logo" src="css/EstiloLV/loja.png" alt="logo">
+        <div class="campoBusca">
+            <form action="$_GET" method="LV.php">    
+                <input class="procura" type="text" placeholder="O que você procura?">    
+                <input class="submit" type="image" src="css/EstiloLV/lupa.png" value="submit">              
+            </form>
+        </div>
+    </section>
 </body>
 </html>
