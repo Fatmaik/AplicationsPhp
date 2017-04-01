@@ -97,20 +97,29 @@ li{
 
 /*começo do estilo do Article*/
 .article{
-   
-    background-color: aquamarine;
+   background-color: rgba(247, 247, 247, 0.8)
+
 }
 #boxArticle{
     margin-top: 10px;
-    margin-left: 400px;
-    width: 700px;
-    background-color: antiquewhite;
+    margin-left: 380px;
+    width:848px;
+    background-color: white;
 }
 #boxArticle img{
     margin-top: 10px;
 }
 #boxArticle p{
+    margin-top: 0px;
     padding: 20px;
+    display: inline-block;
+    
+    width: 98px;
+    
+    text-align: center;
+}
+#boxArticle p:hover{
+    background-color: #F5F5F5;
 }
 #hr{
     

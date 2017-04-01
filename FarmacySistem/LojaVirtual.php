@@ -42,11 +42,11 @@
                 <p>Emagrecimento</p>
                 <p>Inflamação</p>
                 <p>Anestésico</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Gripes</p>
+                <p>Resfriados</p>
+                <p>Dor</p>
+                <p>Febre</p>
+                
                 
 
 
