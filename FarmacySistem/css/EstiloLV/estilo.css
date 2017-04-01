@@ -80,6 +80,7 @@ li{
     margin-left: -8px;
     color: slategrey;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
     
 }
 #beleza{
@@ -91,38 +92,75 @@ li{
 }
 .imgBel{
     margin-top: 3px;
-    margin-left: 50px;
+    margin-left: 53px;
 }
 /*fim do estilo do Section*/
 
 /*começo do estilo do Article*/
 .article{
    background-color: rgba(247, 247, 247, 0.8)
-
 }
-#boxArticle{
+#boxMedicamentos{
+    display: none;
     margin-top: 10px;
     margin-left: 380px;
     width:848px;
     background-color: white;
 }
-#boxArticle img{
+#boxMedicamentos img{
     margin-top: 10px;
 }
-#boxArticle p{
+#boxMedicamentos p{   
     margin-top: 0px;
     padding: 20px;
-    display: inline-block;
-    
-    width: 98px;
-    
+    display: inline-block; 
+    width: 98px;  
     text-align: center;
 }
-#boxArticle p:hover{
+#boxMedicamentos p:hover{
+    background-color: #F5F5F5;
+}
+#boxSaude{
+    display: none;
+    margin-top: 10px;
+    margin-left: 380px;
+    width:848px;
+    background-color: white;
+}
+#boxSaude img{
+    margin-top: 10px;
+}
+#boxSaude p{   
+    margin-top: 0px;
+    padding: 20px;
+    display: inline-block; 
+    width: 98px;  
+    text-align: center;
+}
+#boxSaude p:hover{
+    background-color: #F5F5F5;
+}
+#boxBeleza{
+    display: none;
+    margin-top: 10px;
+    margin-left: 380px;
+    width:848px;
+    background-color: white;
+}
+#boxBeleza img{
+    margin-top: 10px;
+}
+#boxBeleza p{   
+    margin-top: 0px;
+    padding: 20px;
+    display: inline-block; 
+    width: 98px;  
+    text-align: center;
+}
+#boxBeleza p:hover{
     background-color: #F5F5F5;
 }
 #hr{
-    
     height: 4px;
     background-color: olivedrab;
 }

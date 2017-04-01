@@ -33,8 +33,8 @@
         </ul>  
     </section>
     <article class="article">
-        .
-            <div id="boxArticle">
+        
+            <div id="boxMedicamentos">
                 <img src="css/EstiloLV/img/tituloMedic.png" alt="">
                 <hr>
                 <p>Alergia</p>
@@ -46,13 +46,33 @@
                 <p>Resfriados</p>
                 <p>Dor</p>
                 <p>Febre</p>
-                
-                
-
-
             </div>
-            <div id="hr"></div>
+            <div id="boxSaude">
+                <img src="css/EstiloLV/img/tituloSaude.png" alt="logosaude">
+                <hr>
+                <p>Dilatador Nasal</p>
+                <p>Lentes</p>
+                <p>Suplementos Alimenticios</p>
+                <p>Preservativos</p>
+                <p>Dentadura</p>
+                <p>Produtos Naturais</p>
+            </div>
+            <div id="boxBeleza">
+                <img src="css/EstiloLV/img/tituloBeleza.png" alt="logoBeleza">
+                <hr>
+                <p>Cabelo</p>
+                <p>Maquiagem</p>
+                <p>Maos</p>
+                <p>Pés</p>
+                <p>Protetor Solar</p>
+                <p>Perfumes</p>
+                <p>Tinturas</p>
+            </div>
+            <div id="hr"></div>    
         </div>
     </article>
+    <main class="main">
+        <p>test</p>
+    </main>
 </body>
 </html>
