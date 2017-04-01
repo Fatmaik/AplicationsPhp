@@ -11,7 +11,28 @@
 </head>
 <body>
     <?php require_once 'header.php' ?>
-    <main class="main">test</main>
+    <main class="main">
+        
+        <div class="prodAll">
+            <p class="info">Os Mais Baratos<hr>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/claritin.jpg" width="100px" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/beleza/cabelo/escova.png" width="68px" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+
+        </div>
+
+
+
+
+
+    </main>
     
 </body>
 </html>
