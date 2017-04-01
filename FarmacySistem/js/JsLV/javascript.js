@@ -15,7 +15,7 @@ $(document).ready(function() {
         $("#boxSaude").css("display", "none");
         $("#boxBeleza").css("display", "block");
     })
-    $("main").mouseover(function() {
+    $(".main").mouseover(function() {
         $("#boxMedicamentos").css("display", "none");
         $("#boxSaude").css("display", "none");
         $("#boxBeleza").css("display", "none");

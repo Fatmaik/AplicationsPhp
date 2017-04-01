@@ -92,7 +92,7 @@ li{
 }
 .imgBel{
     margin-top: 3px;
-    margin-left: 53px;
+    margin-left: 55px;
 }
 /*fim do estilo do Section*/
 
@@ -163,6 +163,9 @@ li{
 #hr{
     height: 4px;
     background-color: olivedrab;
+}
+.span{
+    background-color: aqua;
 }
 
 /*fim do estilo do Menu*/

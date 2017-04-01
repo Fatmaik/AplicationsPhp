@@ -10,69 +10,8 @@
     <script src="js/JsLV/javascript.js"></script>
 </head>
 <body>
-    <header class="cadPed">
-        <div class="pedidos">Meus Pedidos</div>
-        <div class="cadastro">Meu Cadastro</div>
-    </header>
+    <?php require_once 'header.php' ?>
+    <main class="main">test</main>
     
-    <section>
-        <img class="logo" src="css/EstiloLV/img/loja.png" alt="logo">
-        
-        <form action="$_GET" method="LV.php" class="campoBusca">    
-            <input class="procura" type="text" placeholder="O que você procura?">    
-            <input class="submit" type="image" src="css/EstiloLV/img/lupa.png" value="submit">              
-        </form>       
-        
-        <ul>   
-            <li class="imgMed"><img src="css/EstiloLV/img/medicamentos.png" alt=""width="35px"></li>
-            <li id="medic">Medicamentos</li>   
-            <li class="imgSau"><img src="css/EstiloLV/img/saude.png" alt="" width="53px"></li>
-            <li id="saude">Saude</li>
-            <li class="imgBel"><img src="css/EstiloLV/img/escova.png" alt="" width="37px"></li>
-            <li id="beleza">Beleza</li>
-        </ul>  
-    </section>
-    <article class="article">
-        
-            <div id="boxMedicamentos">
-                <img src="css/EstiloLV/img/tituloMedic.png" alt="">
-                <hr>
-                <p>Alergia</p>
-                <p>Diabete</p>
-                <p>Emagrecimento</p>
-                <p>Inflamação</p>
-                <p>Anestésico</p>
-                <p>Gripes</p>
-                <p>Resfriados</p>
-                <p>Dor</p>
-                <p>Febre</p>
-            </div>
-            <div id="boxSaude">
-                <img src="css/EstiloLV/img/tituloSaude.png" alt="logosaude">
-                <hr>
-                <p>Dilatador Nasal</p>
-                <p>Lentes</p>
-                <p>Suplementos Alimenticios</p>
-                <p>Preservativos</p>
-                <p>Dentadura</p>
-                <p>Produtos Naturais</p>
-            </div>
-            <div id="boxBeleza">
-                <img src="css/EstiloLV/img/tituloBeleza.png" alt="logoBeleza">
-                <hr>
-                <p>Cabelo</p>
-                <p>Maquiagem</p>
-                <p>Maos</p>
-                <p>Pés</p>
-                <p>Protetor Solar</p>
-                <p>Perfumes</p>
-                <p>Tinturas</p>
-            </div>
-            <div id="hr"></div>    
-        </div>
-    </article>
-    <main class="main">
-        <p>test</p>
-    </main>
 </body>
 </html>
