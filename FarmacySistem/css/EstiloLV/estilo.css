@@ -5,7 +5,7 @@ body{
 .prodAll{
     margin-left: 380px;
     background-color: #F5F5F5;
-    width: 928px;
+    width: 890px;
 }
 .info{
     margin-top: 10px;
@@ -23,10 +23,11 @@ body{
     margin-left: 32px;
     background-color: white;
     width: 180px;
-    height: 250px;
+    
 }
-.prod img{
-    padding-top: 20px;
+.prod .imgMed{
+    padding-top: 30px;
+    width: 100px;
 }
 .prod span{
     
@@ -36,4 +37,8 @@ body{
     margin-bottom: 10px;
     color: brown;
     font-size: 20px;
+}
+.prod .carrinho{
+    margin-top:-10px;
+     width:60px; 
 }

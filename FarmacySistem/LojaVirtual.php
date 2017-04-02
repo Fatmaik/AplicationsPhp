@@ -1,7 +1,7 @@
 <?php require_once 'classProd.php';
 $test = new Conexao("mysql:dbname=farmacia;host=localhost", "root", "rancid");
 $test1 =new Produtos($test);
-$x = $test1->Select("medicamentos");
+$x = $test1->Select("beleza");
 
 
 ?>
@@ -26,20 +26,13 @@ $x = $test1->Select("medicamentos");
             <p class="info">Os Mais Baratos<hr>
             <?php foreach($x as $info) {?>
             <p class="prod">
-                <img src=<?php echo $info["local_armazem"] . $info["nome"] . ".jpg";?> width="100px" alt=""><br>
+                <img class="imgMed" src=<?php echo $info["local_armazem"] . $info["nome"] . ".jpg";?> alt="Medicamento"><br>
                 <span><?php echo $info["nome"] . "<br><br>" . $info["descricao_prod"];?></span><br>
-                <span1>R$<?php echo $info["valor"] . ",00<br>";}?> </span1>
+                <span1>R$<?php echo $info["valor"] . ",00<br>"?></span1><br> 
+                <img class="carrinho" src="css/EstiloLV/img/carrinho.png" alt="carrinho de compras"<?php echo "<br>";}?>>
+                 
             </p>
-            <!--<p class="prod"><img src="css/EstiloLV/img/beleza/cabelo/escova.png" width="68px" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>-->
-
+            
         </div>
         
 
