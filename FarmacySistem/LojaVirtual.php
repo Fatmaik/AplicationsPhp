@@ -1,3 +1,11 @@
+<?php require_once 'classProd.php';
+$test = new Conexao("mysql:dbname=farmacia;host=localhost", "root", "rancid");
+$test1 =new Produtos($test);
+$x = $test1->Select("medicamentos");
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -27,7 +35,12 @@
             <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
 
         </div>
-
+        <?php 
+        
+        foreach($x as $info) {
+            echo $info['nome'] . "<br>";
+        }
+        ?>
 
 
 
