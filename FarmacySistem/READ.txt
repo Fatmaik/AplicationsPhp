@@ -1,0 +1,48 @@
+// para testar esta aplicaçao, voce devera montar um database com os seguintes parametros:
+
+1 - nome do db: faramacia
+
+2 - deve possuir 5 tabelas, chamadas compra,clientes,medicamentos,saude e beleza respectivamente
+
+3 - a tabela compra deve possuir os seguintes constrins :
+    
+    create table compra(
+    id int not null auto_increment,
+    data date,
+    valor int,
+    unidades int,
+    entrega varchar(30),
+    idMedicamentos int,
+    idSaude int,
+    idBeleza int,
+    primary key(id),
+    foreign key(idMedicamentos) references medicamentos(id),
+    foreign Key(idSaude) references saude(id),
+    foreign key(idBeleza) references beleza(id)
+    )default charset = utf8;
+
+4 - as tabelas medicamentos,saude e beleza devem possuir os seguintes constrins:
+    
+    create table beleza(
+    id int not null auto_increment,
+    nome varchar(30),
+    genero varchar(30),
+    descricao_prod varchar(30),
+    marca varchar(30),
+    local_armazem varchar(40),
+    estoque int,
+    valor int,
+    primary key(id)
+    )default charset = utf8;
+
+5 - a tabela clientes deve possuir os seguintes constrins:
+
+    create table clientes(
+    id int not null auto_increment,
+    nome varchar(30),
+    sobrenome varchar(30),
+    email varchar(40),
+    senha varchar(32),
+    endereço varchar(40),
+    primary key(id)
+    )default charset = utf8;
