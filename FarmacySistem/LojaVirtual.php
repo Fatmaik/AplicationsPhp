@@ -18,13 +18,19 @@ $x = $test1->Select("medicamentos");
     <script src="js/JsLV/javascript.js"></script>
 </head>
 <body>
-    <?php require_once 'header.php' ?>
+    <?php require_once 'header.php';?>
+    
     <main class="main">
         
         <div class="prodAll">
             <p class="info">Os Mais Baratos<hr>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/claritin.jpg" width="100px" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/beleza/cabelo/escova.png" width="68px" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <?php foreach($x as $info) {?>
+            <p class="prod">
+                <img src=<?php echo $info["local_armazem"] . $info["nome"] . ".jpg";?> width="100px" alt=""><br>
+                <span><?php echo $info["nome"] . "<br><br>" . $info["descricao_prod"];?></span><br>
+                <span1>R$<?php echo $info["valor"] . ",00<br>";}?> </span1>
+            </p>
+            <!--<p class="prod"><img src="css/EstiloLV/img/beleza/cabelo/escova.png" width="68px" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
             <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
             <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
             <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
@@ -32,15 +38,10 @@ $x = $test1->Select("medicamentos");
             <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
             <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
             <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
-            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>
+            <p class="prod"><img src="css/EstiloLV/img/medicamentos/alergia/" alt=""><br><span>Claritin</span><br><span1>R$ 45,00</span1>-->
 
         </div>
-        <?php 
         
-        foreach($x as $info) {
-            echo $info['nome'] . "<br>";
-        }
-        ?>
 
 
 

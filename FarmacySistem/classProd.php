@@ -37,4 +37,7 @@ class Produtos{
         $query->execute();
         return $query->fetchAll(\PDO::FETCH_ASSOC);
     }
+    public function info() {
+        
+    }
 }
