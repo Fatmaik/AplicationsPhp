@@ -31,13 +31,21 @@ class Produtos{
     public function getClientes() {
         return $this->tbClientes;
     }
-    
     public function Select($tbname) {
-        $query =  $this->pdo->prepare("SELECT * FROM $tbname");
+        $query =  $this->pdo->prepare("SELECT * FROM $tbname ");
         $query->execute();
         return $query->fetchAll(\PDO::FETCH_ASSOC);
     }
-    public function maisBaratos() {
-        
+    public function info($tbname) {
+        $selBaratos = $this->select($tbname);
+        $html = '';
+        foreach($selBaratos as $info) {
+            $html .=    "<p class='prod'>" .
+                        "<img class=imgMed src=" . $info['local_armazem'] . $info['nome'] . ".jpg alt='Medicamento'><br>" .
+                        "<span><" . $info['nome'] . "<br><br>" . $info['descricao_prod'] . "></span><br>" .
+                        "<span1>R$" . $info['valor'] . ",00<br></span1><br>" . 
+                        "<img class='carrinho' src='css/EstiloLV/img/carrinho.png' alt='carrinho de compras'><br></p>";
+        }
+        return $html;
     }
 }
