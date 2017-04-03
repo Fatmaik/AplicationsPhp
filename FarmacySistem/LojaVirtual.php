@@ -1,9 +1,8 @@
 <?php require_once 'classProd.php';
-$test = new Conexao("mysql:dbname=farmacia;host=localhost", "root", "rancid");
-$test1 =new Produtos($test);
+$conexao = new Conexao("mysql:dbname=farmacia;host=localhost", "root", "rancid");
+$produtos= new Produtos($conexao);
 
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,11 +18,16 @@ $test1 =new Produtos($test);
     <?php require_once 'header.php';?>
     
     <main class="main">
-        
         <div class="prodAll">
-            <p class="info">Os Mais Baratos<hr></p>
-            <?php echo $test1->info("medicamentos");?>            
+            <p class="info">Todos os Produtos<hr></p>
+            <?php 
+            // echo $produtos->info("medicamentos");
+            echo $produtos->info("saude");
+            // echo $produtos->info("beleza");
+            ?>            
         </div>
+
+        
     </main>
     
 </body>

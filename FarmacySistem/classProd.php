@@ -42,7 +42,7 @@ class Produtos{
         foreach($selBaratos as $info) {
             $html .=    "<p class='prod'>" .
                         "<img class=imgMed src=" . $info['local_armazem'] . $info['nome'] . ".jpg alt='Medicamento'><br>" .
-                        "<span><" . $info['nome'] . "<br><br>" . $info['descricao_prod'] . "></span><br>" .
+                        "<span>" . $info['nome'] . "<br><br>" . $info['descricao_prod'] . "</span><br>" .
                         "<span1>R$" . $info['valor'] . ",00<br></span1><br>" . 
                         "<img class='carrinho' src='css/EstiloLV/img/carrinho.png' alt='carrinho de compras'><br></p>";
         }

@@ -1,6 +1,8 @@
 ### PROBLEMAS PARA RESOLVER ###
-1 - Associacao de todas as tabelas, com uma unica tabela para gerar valores em um unico select
-2 - tratamento de display de produtos a ser pesquisados.
+    
+    redimencionar todas as imagens
+1 - Associacao de todas as tabelas no DATABASE, com uma unica tabela para gerar valores em um unico select
+2 - tratamento de display de produtos a ser pesquisados por click no genero que for desejado
 
 
 
