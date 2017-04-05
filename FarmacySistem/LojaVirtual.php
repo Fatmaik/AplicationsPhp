@@ -21,9 +21,9 @@ $produtos= new Produtos($conexao);
         <div class="prodAll">
             <p class="info">Todos os Produtos<hr></p>
             <?php 
-            // echo $produtos->info("medicamentos");
+            echo $produtos->info("medicamentos");
             echo $produtos->info("saude");
-            // echo $produtos->info("beleza");
+            echo $produtos->info("beleza");
             ?>            
         </div>
 
