@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FarmacySistem</title>
     <link rel="stylesheet" href="css/EstiloIndex/estilo.css">
-    <script src="js/Jsindex/jquery.js"></script>
-    <script src="js/Jsindex/javascript.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jsIndex.js"></script>
 </head>
 <body>
     <header>ESCOLHA A OPÇÂO DE ACESSO:</header>

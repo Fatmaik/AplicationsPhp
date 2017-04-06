@@ -11,8 +11,8 @@ $produtos= new Produtos($conexao);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LojaVirtual</title>
     <link rel="stylesheet" href="css/estiloLV/estilo.css">
-    <script src="js/JsLV/jquery.js"></script>
-    <script src="js/JsLV/javascript.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jsLV.js"></script>
 </head>
 <body>
     <?php require_once 'header.php';?>
@@ -27,6 +27,7 @@ $produtos= new Produtos($conexao);
             ?>            
         </div>
 
+        
         
     </main>
     

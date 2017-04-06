@@ -20,7 +20,15 @@ $(document).ready(function() {
         $("#boxSaude").css("display", "none");
         $("#boxBeleza").css("display", "none");
     });
-    
+     $("#boxMedicamentos:parent").click(function() {
+         var p = $(this).text();
+        //  var x = p.text();
+         alert(p[2]);
+        $(".prodAll").css("display", "none");
+
+
+        
+     })
    
      
 })

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/headerPhp/estilo.css">
-    <script src="js/JsLV/jquery.js"></script>
-    <script src="js/JsLV/javascript.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jsIndex.js"></script>
 </head>
 <body>
     <header class="cadPed">
