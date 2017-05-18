@@ -1,7 +1,7 @@
 <?php
 // classe de conexao ao banco de dados farmacia
 class Connect{
-    private $db;
+    public $dbase;
     
     public function __construct(){
         global $config;
@@ -10,12 +10,17 @@ class Connect{
         $dbuser = $config['dbuser'];
         $dbpass = $config['dbpass'];
 
-        $dsn = "mysql:dbname".$dbname.";host=".$host;
-
+        $dsn = "mysql:dbname=".$dbname.";host=".$host;
+        $this->dbase = new \PDO("mysql:dbname=farmacia;host=localhost", "root", "rancid");
         try{
-            return $this->db = new \PDO($dsn, $dbuser, $dbpass);
+            // return $this->db = new \PDO($dsn, $dbuser, $dbpass);
+            
         }catch(PDOException $e) {
             echo "falha: " .$e->getMessage();
         }
-    }  
-}
+    }
+    public function testCon(){
+        // $this->dbase = "test";
+        // echo $this->dbase;
+    }
+ }
