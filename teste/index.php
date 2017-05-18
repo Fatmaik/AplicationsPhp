@@ -1,4 +1,23 @@
-<!DOCTYPE html>
+<?php
+require_once 'Config.php';
+spl_autoload_register(function ($className) {
+    if(file_exists("App/Controller/".$className.".php")) {
+        require_once "App/Controller/".$className.".php";
+    }
+    if(file_exists("App/Model/".$className.".php")) {
+        require_once "App/Model/".$className.".php";
+    }
+    if(file_exists("App/Core/".$className.".php")) {
+        require_once "App/Core/".$className.".php";
+    }
+    
+});
+
+$c = new Core();
+$c->run();
+?>
+
+<!--<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -16,5 +35,6 @@
         <a class="Site" href=""><img src="css/EstiloIndex/farmacia.png" alt="Site"></a>
         <a class="LV" href=""><img src="css/EstiloIndex/loja.png" alt="loja"></a>
     </article>
+
 </body>
-</html>
+</html>-->
