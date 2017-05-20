@@ -6,8 +6,8 @@ class homeController extends Controller{
         $dados = array();
         $produtos = new Produtos();
        
-        // $dados["saude"] = $produtos->Select("saude");
-        // $dados["beleza"] = $produtos->Select("beleza");   
+        $dados["saude"] = $produtos->Select("saude");
+        $dados["beleza"] = $produtos->Select("beleza");   
             
        
         
@@ -16,7 +16,7 @@ class homeController extends Controller{
         
 
 
-        $this->loadTemplate("test", $dados);
+        $this->loadTemplate("Template", $dados);
         
     }
 }
