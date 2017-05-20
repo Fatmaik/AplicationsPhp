@@ -5,7 +5,7 @@ $config = array();
 
 if(ENVIRONMENT == "development") {
     $config['host']   = "localhost";
-    $config['dbname'] = "farmacia";
+    $config['dbname'] = "test";
     $config['dbuser'] = "root";
     $config['dbpass'] = "rancid";
 }
