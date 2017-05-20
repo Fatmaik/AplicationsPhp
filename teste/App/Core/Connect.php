@@ -11,14 +11,9 @@ class Connect{
         $dbpass = $config['dbpass'];
 
         $dsn = "mysql:dbname=".$dbname.";host=".$host;
-        try{
-            return $this->dbase = new \PDO($dsn, $dbuser, $dbpass);  
-        }catch(PDOException $e) {
-            echo "falha: " .$e->getMessage();
-        }
+    
+        $this->dbase = new \PDO($dsn, $dbuser, $dbpass);  
+        
     }
-    public function testCon(){
-        $this->dbase = "test";
-        echo $this->dbase;
-    }
+    
  }

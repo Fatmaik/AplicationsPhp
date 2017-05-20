@@ -30,13 +30,13 @@ class Produtos extends Connect{
     public function getClientes() {
         return $this->tbClientes;
     }
-    public function select($tbname) {
-        // $query = array();
+    public function Select($tbname) {
+        $array = array();
         $query = $this->dbase->query("SELECT * FROM $tbname ");
         // $query->bindParam(":tbname", $tbname);
-        $query->execute();
-        $query->fetchAll(\PDO::FETCH_ASSOC);
-        return $query;
+        // $query->execute();
+        $array = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $array;
     }
     public function info($tbname) {
         $selBaratos = $this->select($tbname);
