@@ -1,5 +1,9 @@
 $(document).ready(function() {
     
+    $(".logo").click(function() {
+        window.location.href = "http://localhost:8080";
+    })
+
     $("#medic").hover(function() {
         $("#boxMedicamentos").css("display", "block");
         $("#boxSaude").css("display", "none");
@@ -20,15 +24,10 @@ $(document).ready(function() {
         $("#boxSaude").css("display", "none");
         $("#boxBeleza").css("display", "none");
     });
-     $("#boxMedicamentos:parent").click(function() {
-         var p = $(this).text();
-        //  var x = p.text();
-         alert(p[2]);
-        $(".prodAll").css("display", "none");
-
-
-        
-     })
-   
      
+     $("#boxMedicamentos p").click(function() {
+        var url = $(this).text();
+        window.location.href = 'http://localhost:8080/medicamentos/'+ url;
+    })
+   
 })

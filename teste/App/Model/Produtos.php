@@ -6,6 +6,7 @@ class Produtos extends Connect{
     private $tbMedicamentos;
     private $tbSaude;
     private $tbBeleza;
+    private $filtro;
 
     public function __construct() {
         parent::__construct();
@@ -33,25 +34,25 @@ class Produtos extends Connect{
     public function Select($tbname) {
         $array = array();
         $query = $this->dbase->query("SELECT * FROM $tbname ");
-        // $query->bindParam(":tbname", $tbname);
-        // $query->execute();
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $array;
     }
-    public function info($tbname) {
-        $selBaratos = $this->select($tbname);
-        $html = '';
-        foreach($selBaratos as $info) {
-            $html .=    "<p class='prod'>" .
-                        "<img class=img src=" . $info['local_armazem'] . $info['nome'] . ".jpg alt='Medicamento'><br>" .
-                        "<span>" . $info['nome'] . "<br><br>" . $info['descricao_prod'] . "</span><br>" .
-                        "<span1>R$" . $info['valor'] . ",00<br></span1><br>" . 
-                        "<img class='carrinho' src='css/EstiloLV/img/carrinho.png' alt='carrinho de compras'><br></p>";
-        }
-        return $html;
+    public function filtro($genero) {
+        $array = array();
+        $query = $this->dbase->query("SELECT * FROM medicamentos WHERE genero = '$genero' " );
+        $array = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $array;
     }
-    public function test() {
-        echo "tentProdddd";
+
+    public function getUrl() {
+        $url = explode("index.php/medicamentos/", $_SERVER["PHP_SELF"]);
+        $url = end($url);
+        // array_shift($url);
+        // return $t = join($url);
+        return $url;
+
+        
     }
+        
     
 }

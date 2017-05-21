@@ -1,5 +1,6 @@
 <?php
 class Core{
+    private $currentAction;
 
     public function run() {
         // recebe a url acessada e apaga td que estivar antes deo index.php
@@ -36,6 +37,9 @@ class Core{
             $currentController = "HomeController";
             $currentAction     = "index";
         }
+        
+        echo $currentController . "<br>";
+        echo $currentAction;
         require_once "App/Core/Controller.php";
 
         // chamando o controller atual
