@@ -17,7 +17,7 @@ function boxSetores() {
         var url = "saude/" + genero;
         retiraAcentoDaUrl(url);
     })
-    $("#boxBelesza p").click(function() {
+    $("#boxBeleza p").click(function() {
         var genero = $(this).text();
         var url = "beleza/" + genero;
         retiraAcentoDaUrl(url);

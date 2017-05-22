@@ -6,8 +6,7 @@ class medicamentosController extends Controller{
         $dados = array();
         $produtos = new Produtos();
         $dados["iten"] = $produtos->Select("medicamentos");
-        $this->loadTemplate("medicamentos", $dados);
-        
+        $this->loadTemplate("medicamentos", $dados);  
     }
     public function Alergia() {
         $dados = array();

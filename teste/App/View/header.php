@@ -62,7 +62,7 @@
                 <hr>
                 <p>Cabelo</p>
                 <p>Maquiagem</p>
-                <p>Maos</p>
+                <p>Mâos</p>
                 <p>Pés</p> 
                 <p>Perfumes</p>
                 <p>Tinturas</p>

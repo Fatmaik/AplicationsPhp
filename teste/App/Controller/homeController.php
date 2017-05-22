@@ -11,7 +11,5 @@ class homeController extends Controller{
         $dados["medicamentos"] = $produtos->Select("medicamentos");
 
         $this->loadTemplate("TodosOsProdutos", $dados);
-    }
-   
-    
+    }  
 }

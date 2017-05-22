@@ -17,9 +17,9 @@
         $prod = $item->getUrl();
     }else{
         $prod = "Todos os Produtos";
-    }
-    
+    }  
     ?>
+    
     <main class="main">
         <div class="prodAll">
             <p class="info"><?php echo  ucfirst($prod);?> <hr></p>
