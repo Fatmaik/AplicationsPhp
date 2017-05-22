@@ -37,9 +37,6 @@ class Core{
             $currentController = "HomeController";
             $currentAction     = "index";
         }
-        
-        echo $currentController . "<br>";
-        echo $currentAction;
         require_once "App/Core/Controller.php";
 
         // chamando o controller atual
