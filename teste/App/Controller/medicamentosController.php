@@ -13,7 +13,7 @@ class medicamentosController extends Controller{
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);
     }
 
@@ -21,7 +21,7 @@ class medicamentosController extends Controller{
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);    
     }
 
@@ -29,7 +29,7 @@ class medicamentosController extends Controller{
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);    
     }
 
@@ -37,7 +37,7 @@ class medicamentosController extends Controller{
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);    
     }
 
@@ -45,35 +45,35 @@ class medicamentosController extends Controller{
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);    
     }
     public function Dor() {
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);    
     }
     public function Emagrecimento() {
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);    
     }
     public function Gripes() {
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);    
     }
     public function Febre() {
         $dados = array();
         $produtos = new Produtos();
         $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro($produtos->getUrl());
+        $dados["iten"] = $produtos->filtro("medicamentos", $produtos->getUrl());
         $this->loadTemplate("medicamentos/". $produtos->getUrl(), $dados);    
     }
 

@@ -50,12 +50,12 @@
             <div id="boxSaude">
                 <img src="../Assets/css/headerPhp/img/tituloSaude.png" alt="logosaude">
                 <hr>
-                <p>Dilatador Nasal</p>
+                <p>Nasal</p>
                 <p>Lentes</p>
-                <p>Suplementos Alimenticios</p>
+                <p>Suplementos</p>
                 <p>Preservativos</p>
                 <p>Dentadura</p>
-                <p>Protetor Solar</p>
+                <p>Protetor</p>
             </div>
             <div id="boxBeleza">
                 <img src="../Assets/css/headerPhp/img/tituloBeleza.png" alt="logoBeleza">

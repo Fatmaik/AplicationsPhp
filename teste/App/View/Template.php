@@ -16,15 +16,9 @@
     if($item->getUrl() != "/index.php") {
         $prod = $item->getUrl();
     }else{
-        $prod = "Todos";
-    }
-    if(strlen($prod) > 13) {
-        $url = explode("index.php/", $prod);
-        array_shift($url);
-        $prod = implode("/", $url);    
+        $prod = "Todos os Produtos";
     }
     
-
     ?>
     <main class="main">
         <div class="prodAll">

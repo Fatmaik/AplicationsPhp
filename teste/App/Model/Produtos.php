@@ -37,23 +37,31 @@ class Produtos extends Connect{
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $array;
     }
-    public function filtro($genero) {
+    public function filtro($tbname, $genero) {
         $array = array();
-        $query = $this->dbase->query("SELECT * FROM medicamentos WHERE genero = '$genero' " );
+        $query = $this->dbase->query("SELECT * FROM $tbname WHERE genero = '$genero' " );
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $array;
     }
 
     public function getUrl() {
-        $url = explode("index.php/medicamentos/", $_SERVER["PHP_SELF"]);
-        $url = end($url);
+        $url = explode("index.php/", $_SERVER["PHP_SELF"]);
         // array_shift($url);
-        // return $t = join($url);
+        // $url = end($url);
+        // $x = explode("/ ", $url);
+
+        $url = str_replace("medicamentos/", "", $url);
+        $url = str_replace("saude/", "", $url);
+        $url = str_replace("beleza/", "", $url);
+        $url = end($url);
+        
+        // $url = array_splice("saude/");
+        // $url = array_splice("beleza/");
+        
+        // echo $url ."<br>";
         
        
-        return $url;
-
-        
+        return $url;  
     }
         
     

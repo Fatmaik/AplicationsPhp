@@ -27,8 +27,8 @@ function boxSetores() {
 // funcaopara retirar acentos das strings que seram passadas para a url
 function retiraAcentoDaUrl(url) {
     // caracteres especiais para retirar e retonar uma string pura para a url
-    strSChar = "áàãâäéèêëíìîïóòõôöúùûüçÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÇ";
-    strNoSChars = "aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC";
+    strSChar = "áàãâäéèêëíìîïóòõôöúùûüçÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÇ ";
+    strNoSChars = "aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC ";
     
     var newUrl = "";
     for (var i = 0; i < url.length; i++) {
