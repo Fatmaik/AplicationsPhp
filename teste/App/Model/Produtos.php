@@ -31,7 +31,7 @@ class Produtos extends Connect{
     public function getClientes() {
         return $this->tbClientes;
     }
-    public function Select($tbname) {
+    public function Select($tbname, $filtro = "") {
         $array = array();
         $query = $this->dbase->query("SELECT * FROM $tbname ");
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
@@ -49,6 +49,8 @@ class Produtos extends Connect{
         $url = end($url);
         // array_shift($url);
         // return $t = join($url);
+        
+       
         return $url;
 
         

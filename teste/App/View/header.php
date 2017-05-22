@@ -24,7 +24,7 @@
         </form>       
         
         <ul>   
-            <li class="imgMed"><img src="../Assets/css/headerPhp/img/medicamentos.png" alt=""width="35px"></li>
+            <li class="imgMed" id="tituloMedic"><img src="../Assets/css/headerPhp/img/medicamentos.png" alt=""width="35px"></li>
             <li id="medic">Medicamentos</li>   
             <li class="imgSau"><img src="../Assets/css/headerPhp/img/saude.png" alt="" width="53px"></li>
             <li id="saude">Saude</li>
@@ -35,17 +35,17 @@
     <article class="article">
         
             <div id="boxMedicamentos">
-                <img src="../Assets/css/headerPhp/img/tituloMedic.png" alt="">
+                <img src="../Assets/css/headerPhp/img/tituloMedic.png" alt="" >
                 <hr>
-                <p><a href="App/Controller/MedicamentosController.php"></a>Alergia</p>
-                <p><a href="View/Alergia.php"></a>Diabete</p>
-                <p><a href="View/Alergia.php"></a>Emagrecimento</p>
-                <p><a href="View/Alergia.php"></a>Inflamação</p>
-                <p><a href="View/Alergia.php"></a>Anestésico</p>
-                <p><a href="View/Alergia.php"></a>Gripes</p>
-                <p><a href="View/Alergia.php"></a>Resfriados</p>
-                <p><a href="View/Alergia.php"></a>Dor</p>
-                <p><a href="View/Alergia.php"></a>Febre</p>
+                <p>Alergia</p>
+                <p>Diabete</p>
+                <p>Emagrecimento</p>
+                <p>Inflamação</p>
+                <p>Anestésico</p>
+                <p>Gripes</p>
+                <p>Resfriados</p>
+                <p>Dor</p>
+                <p>Febre</p>
             </div>
             <div id="boxSaude">
                 <img src="../Assets/css/headerPhp/img/tituloSaude.png" alt="logosaude">
