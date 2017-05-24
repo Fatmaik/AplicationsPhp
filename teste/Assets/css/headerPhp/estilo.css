@@ -22,9 +22,9 @@ body{
 /*fim do estilo do header*/
 
 /*inicio do estilo da Section*/
-section{
+
     /*background-color: azure;*/
-}
+
 .logo{
     margin-left: 350px;
     margin-top: 30px;
@@ -56,6 +56,39 @@ section{
     height: 40px;
     outline:none
 }
+
+#carrinhoElogin {
+    float: right;
+    margin-right: 220px;
+    margin-top: -50px;
+    width: 290px;
+    height: 50px;
+   
+}
+#acount{
+    width: 60px;
+}
+#Plogin{
+    margin-left: 60px;
+    margin-top: -50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: silver;
+}
+#carrinho {
+    float: right;
+    margin-right: 70px;
+    margin-top: -58px;
+    width: 50px; 
+}
+#Pcarrinho{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 220px;
+    margin-top: -47px;
+    font-size: 14px;
+    color: silver;
+}
+
 ul{
     margin-top: 40px;
     margin-left: 400px;
@@ -176,6 +209,28 @@ li{
 }
 
 /*fim do estilo do Menu*/
+
+#loginCadastro {
+    margin-top: -200px;
+    position: fixed;
+    background-color: rgba(105, 105, 105, 0.8);
+    width: 100%;
+    height: 700px;
+}
+#login{
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+#cadastro{
+    background-color: burlywood;
+    width: 500px;
+    height: 600px;
+    margin-left: 850px;
+    margin-top: -600px;
+}
 
 /*========== FIM DO ESTILO DO HEADER.PHP =============*/
 

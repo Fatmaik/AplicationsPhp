@@ -21,8 +21,11 @@
         <form action="$_GET" method="LV.php" class="campoBusca">    
             <input class="procura" type="text" placeholder="O que você procura?">    
             <input class="submit" type="image" src="../Assets/css/headerPhp/img/lupa.png" value="submit">              
-        </form>       
-        
+        </form>
+        <div id="carrinhoElogin">
+            <img id="acount" src="../Assets/css/headerPhp/img/account-outline.png" alt=""><p id="Plogin">Login<br> e cadastro</p>
+            <img id="carrinho" src="../Assets/css/headerPhp/img/cart-outline.png" alt=""> <p id="Pcarrinho">Carrinho<br>R$ </p>
+        </div>
         <ul>   
             <li class="imgMed" id="tituloMedic"><img src="../Assets/css/headerPhp/img/medicamentos.png" alt=""width="35px"></li>
             <li id="medic">Medicamentos</li>   
@@ -68,8 +71,15 @@
                 <p>Tinturas</p>
             </div>
             <div id="hr"></div>    
-        </div>
+       
     </article>
-    
+    <div id="loginCadastro">
+        <div id="login">
+
+        </div>
+        <div id="cadastro">
+            
+        </div>
+    </div>
 </body>
 </html>
