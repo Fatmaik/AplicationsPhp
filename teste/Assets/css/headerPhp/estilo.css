@@ -224,6 +224,52 @@ li{
     margin-left: 350px;
     margin-top: 50px;
 }
+#login img{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+#form{
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 14px;
+    
+}
+#form input{
+    width: 390px;
+    height: 30px;
+}
+#login h2{
+    color: burlywood;
+    margin-left: 100px;
+    padding-top: 30px;
+}
+#form #inputTel{
+    width: 190px;
+}
+#form #inputNasc{
+    margin-top: -70px;
+    margin-left: 220px;
+    width: 190px;
+}
+
+#form .inputArea{
+     width: 170px;
+}
+
+#inputSexo #sexo{
+    height: 40px;
+    width: 175px;
+}
+
+#inputSexo{
+    margin-top: -55px;
+    margin-left: 220px;
+    width: 190px;
+}
+.nome{
+    float: left;
+    margin-left: 80;
+}
 #cadastro{
     background-color: burlywood;
     width: 500px;

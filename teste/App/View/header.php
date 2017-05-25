@@ -75,10 +75,47 @@
     </article>
     <div id="loginCadastro">
         <div id="login">
+            <img src="../Assets/css/headerPhp/img/account-card-details.png" alt="" width="50px">
+            
+            <form action="" id="form">
+            <h2>QUERO ME CADASTRAR</h2>
+                NOME COMPLETO*<br>
+                <input id="nome" type="text" require><br><br>
 
+                CPF*<br>
+                <input id="cpf" type="number" require><br><br>
+
+                <div id="inputTel">
+                    TELEFONE*<br>
+                    <input class="inputArea" type="telefone" require><br><br>
+                </div>  
+                <div id="inputNasc">
+                    DATA DE NASCIMENTO*<br>
+                    <input class="inputArea" type="text" require><br><br>
+                </div>
+
+                
+
+                <div id="inputCidade">
+                    CIDADE*<br>
+                    <input type="text" require class="inputArea">
+                </div>
+
+                <div id="inputSexo">
+                    SEXO* <br clear>
+                    <select name="sexo" id="sexo">                       
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+                
+
+
+                
+            </form>
         </div>
         <div id="cadastro">
-            
+
         </div>
     </div>
 </body>
