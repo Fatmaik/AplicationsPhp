@@ -74,7 +74,8 @@
        
     </article>
     <div id="loginCadastro">
-        <div id="login">
+        
+        <div id="cadastro">
             <img src="../Assets/css/headerPhp/img/account-card-details.png" alt="cadastrar" width="50px">
             
             <form action="" id="form">
@@ -116,13 +117,27 @@
                 <input id="cadastrar" type="submit" value="Cadastrar">
              </form>
         </div>
-        <div id="cadastro">
+        
+        <div id="login">
+            
             <img src="../Assets/css/headerPhp/img/account-key.png" alt="login" width="50px">
 
             
             <form id="form2" action="">
                 <h2>JA POSSUO MINHA CONTA</h2>
-            </form>
+                <img id="closePag" src="../Assets/css/headerPhp/img/x1.png" alt="fechar pagina" width="30px">
+                
+                <label for="email">EMAIL</label>
+                <input type="email"><br><br>
+                
+                <label for="senha">SENHA</label>
+                <input type="text"><br><br><br>
+
+                <input id="logar" type="submit" value="Logar">
+
+
+            </form><br>
+            <a href="">Esqueci a senha!</a>
         </div>
     </div>
 </body>

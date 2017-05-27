@@ -4,7 +4,7 @@ body{
 }
 /*inicio de estilo do header*/
 .cadPed{
-    background-color: olivedrab;
+    background-color: #6B8E23;
     height: 40px;
 }
 .pedidos{
@@ -64,6 +64,10 @@ body{
     width: 290px;
     height: 50px;
    
+}
+#carrinhoElogin p:hover{
+    cursor: pointer;
+
 }
 #acount{
     width: 60px;
@@ -215,30 +219,33 @@ li{
 
 #hr{
     height: 4px;
-    background-color: olivedrab;
+    background-color: #6B8E23;
 }
 
 .span{
     background-color: aqua;
 }
+
 /*fim do estilo do Menu*/
 
 /*inicio do estilo de cadastro*/
 #loginCadastro {
+    display: none;
     margin-top: -200px;
     position: fixed;
     background-color: rgba(105, 105, 105, 0.8);
     width: 100%;
     height: 700px;
 }
-#login{
+#cadastro{
+    /*display: none;*/
     background-color: white;
     width: 500px;
     height: 600px;
     margin-left: 350px;
     margin-top: 50px;
 }
-#login img{
+#cadastro img{
     margin-top: 10px;
     margin-left: 80px;
 }
@@ -251,10 +258,12 @@ li{
 #form input{
     width: 390px;
     height: 30px;
-    font-size: 18px;
+    font-size: 16px;
+    color: #8B8989;
+    padding-left: 10px;
 }
-#login h2{
-    color: olivedrab;
+#cadastro h2{
+    color: #6B8E23;
     margin-left: 100px;
     padding-top: 30px;
 }
@@ -292,37 +301,34 @@ li{
 #form #cadastrar{
     width: 395px;
     color: white;
-    background-color: olivedrab;
+    background-color: #6B8E23;
 }
 .nome{
     float: left;
     margin-left: 80;
     
 }
-
 span{
     color: red;
 }
-
 /*fim estilo de cadastro*/
 
 
 /*inicio estilo de login*/
-#cadastro{
-    background-color: olivedrab;
+#login{
+    background-color: #6B8E23;
     width: 500px;
     height: 600px;
     margin-left: 850px;
     margin-top: -600px;
 }
 
-#cadastro img{
+#login img{
     margin-top: 10px;
     margin-left: 80px;
 }
 
 #form2 h2{
-   
     color: white;
     margin-left: 100px;
     padding-top: 30px;
@@ -334,9 +340,33 @@ span{
     font-size: 14px;
     
 }
+#form2 label{
+    color: white;
+}
 #form2 input{
     width: 390px;
     height: 30px;
+    font-size: 16px;
+    color: #8B8989;
+    padding-left: 10px;
+}
+
+#form2 #logar{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: #6B8E23;
+}
+
+#login a{
+    color: white;
+    margin-left: 50px;
+}
+
+#form2 #closePag{
+    float: left;
+    margin-top: -55px;
+    margin-left: 410px;
 }
 
 

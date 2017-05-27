@@ -3,7 +3,19 @@ $(document).ready(function() {
     hover();
     boxSetores();
     setor();
+    
+
+    Login()
 })
+function Login() {
+    $("#Plogin").click(function() {
+        $("#loginCadastro").css("display", "block");
+    });
+    $("#closePag").click(function() {
+        $("#loginCadastro").css("display", "none");
+    });
+}
+
 
 // funcao para redirecionamento de filtor de produtos retornando a url
 function boxSetores() {
