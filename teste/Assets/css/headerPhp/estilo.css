@@ -134,6 +134,7 @@ li{
 .article{
    background-color: rgba(247, 247, 247, 0.8)
 }
+
 #boxMedicamentos{
     display: none;
     margin-top: 10px;
@@ -141,9 +142,11 @@ li{
     width: 890px;
     background-color: white;
 }
+
 #boxMedicamentos img{
     margin-top: 10px;
 }
+
 #boxMedicamentos p{   
     margin-top: 0px;
     padding: 20px;
@@ -153,9 +156,11 @@ li{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #boxMedicamentos p:hover{
     background-color: #F5F5F5;
 }
+
 #boxSaude{
     display: none;
     margin-top: 10px;
@@ -163,9 +168,11 @@ li{
     width: 890px;
     background-color: white;
 }
+
 #boxSaude img{
     margin-top: 10px;
 }
+
 #boxSaude p{   
     margin-top: 0px;
     padding: 20px;
@@ -175,9 +182,11 @@ li{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #boxSaude p:hover{
     background-color: #F5F5F5;
 }
+
 #boxBeleza{
     display: none;
     margin-top: 10px;
@@ -185,9 +194,11 @@ li{
     width: 890px;
     background-color: white;
 }
+
 #boxBeleza img{
     margin-top: 10px;
 }
+
 #boxBeleza p{   
     margin-top: 0px;
     padding: 20px;
@@ -197,19 +208,22 @@ li{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #boxBeleza p:hover{
     background-color: #F5F5F5;
 }
+
 #hr{
     height: 4px;
     background-color: olivedrab;
 }
+
 .span{
     background-color: aqua;
 }
-
 /*fim do estilo do Menu*/
 
+/*inicio do estilo de cadastro*/
 #loginCadastro {
     margin-top: -200px;
     position: fixed;
@@ -237,15 +251,24 @@ li{
 #form input{
     width: 390px;
     height: 30px;
+    font-size: 18px;
 }
 #login h2{
-    color: burlywood;
+    color: olivedrab;
     margin-left: 100px;
     padding-top: 30px;
 }
+
 #form #inputTel{
     width: 190px;
 }
+
+#form #inputresenha{
+    margin-top: -70px;
+    margin-left: 220px;
+    width: 190px;
+}
+
 #form #inputNasc{
     margin-top: -70px;
     margin-left: 220px;
@@ -266,17 +289,57 @@ li{
     margin-left: 220px;
     width: 190px;
 }
+#form #cadastrar{
+    width: 395px;
+    color: white;
+    background-color: olivedrab;
+}
 .nome{
     float: left;
     margin-left: 80;
+    
 }
+
+span{
+    color: red;
+}
+
+/*fim estilo de cadastro*/
+
+
+/*inicio estilo de login*/
 #cadastro{
-    background-color: burlywood;
+    background-color: olivedrab;
     width: 500px;
     height: 600px;
     margin-left: 850px;
     margin-top: -600px;
 }
+
+#cadastro img{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+#form2 h2{
+   
+    color: white;
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+#form2{
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 14px;
+    
+}
+#form2 input{
+    width: 390px;
+    height: 30px;
+}
+
+
 
 /*========== FIM DO ESTILO DO HEADER.PHP =============*/
 

@@ -75,47 +75,54 @@
     </article>
     <div id="loginCadastro">
         <div id="login">
-            <img src="../Assets/css/headerPhp/img/account-card-details.png" alt="" width="50px">
+            <img src="../Assets/css/headerPhp/img/account-card-details.png" alt="cadastrar" width="50px">
             
             <form action="" id="form">
-            <h2>QUERO ME CADASTRAR</h2>
-                NOME COMPLETO*<br>
-                <input id="nome" type="text" require><br><br>
+                <h2>QUERO ME CADASTRAR</h2>
+                
+                NOME COMPLETO <span>*</span><br><input id="nome" type="text" require><br><br>
+                CPF <span>*</span><br><input id="cpf" type="number" require><br><br>
+                EMAIL <span>*</span><br><input id="email" type="email" require><br><br>
+                
+                <div id="inputsenha">
+                    SENHA <span>*</span><br>
+                    <input class="inputArea" type="text" require><br><br>
+                </div> 
 
-                CPF*<br>
-                <input id="cpf" type="number" require><br><br>
+                <div id="inputresenha">
+                    CONFIRME A SENHA <span>*</span><br><input class="inputArea" type="text" require><br><br>
+                </div> 
 
                 <div id="inputTel">
-                    TELEFONE*<br>
-                    <input class="inputArea" type="telefone" require><br><br>
+                    TELEFONE <span>*</span><br><input class="inputArea" type="text" require><br><br>
                 </div>  
+                
                 <div id="inputNasc">
-                    DATA DE NASCIMENTO*<br>
-                    <input class="inputArea" type="text" require><br><br>
+                    DATA DE NASCIMENTO <span>*</span><br><input class="inputArea" type="text" require><br><br>
                 </div>
 
-                
-
                 <div id="inputCidade">
-                    CIDADE*<br>
-                    <input type="text" require class="inputArea">
+                    CIDADE <span>*</span><br><input type="text" require class="inputArea">
                 </div>
 
                 <div id="inputSexo">
-                    SEXO* <br clear>
+                    SEXO <span>*</span> <br clear>
                     <select name="sexo" id="sexo">                       
                         <option value="Masculino">Masculino</option>
                         <option value="Feminino">Feminino</option>
                     </select>
-                </div>
+                </div><br><br>
                 
-
-
-                
-            </form>
+                <input id="cadastrar" type="submit" value="Cadastrar">
+             </form>
         </div>
         <div id="cadastro">
+            <img src="../Assets/css/headerPhp/img/account-key.png" alt="login" width="50px">
 
+            
+            <form id="form2" action="">
+                <h2>JA POSSUO MINHA CONTA</h2>
+            </form>
         </div>
     </div>
 </body>
