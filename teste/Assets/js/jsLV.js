@@ -10,6 +10,10 @@ $(document).ready(function() {
 function Login() {
     $("#Plogin").click(function() {
         $("#loginCadastro").css("display", "block");
+         $("#boxMedicamentos").css("display", "none");
+        $("#boxSaude").css("display", "none");
+        $("#boxBeleza").css("display", "none");
+
     });
     $("#closePag").click(function() {
         $("#loginCadastro").css("display", "none");

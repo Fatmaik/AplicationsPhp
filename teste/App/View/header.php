@@ -24,7 +24,7 @@
         </form>
         <div id="carrinhoElogin">
             <img id="acount" src="../Assets/css/headerPhp/img/account-outline.png" alt=""><p id="Plogin">Login<br> e cadastro</p>
-            <img id="carrinho" src="../Assets/css/headerPhp/img/cart-outline.png" alt=""> <p id="Pcarrinho">Carrinho<br>R$ </p>
+            <img id="carrinho" src="../Assets/css/headerPhp/img/cart-outline.png" alt=""> <p id="Pcarrinho">Carrinho<br>R$ <?php echo $_SESSION["valor"]; ?> </p>
         </div>
         <ul>   
             <li class="imgMed" id="tituloMedic"><img src="../Assets/css/headerPhp/img/medicamentos.png" alt=""width="35px"></li>

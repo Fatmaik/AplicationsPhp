@@ -46,23 +46,10 @@ class Produtos extends Connect{
 
     public function getUrl() {
         $url = explode("index.php/", $_SERVER["PHP_SELF"]);
-        // array_shift($url);
-        // $url = end($url);
-        // $x = explode("/ ", $url);
-
         $url = str_replace("medicamentos/", "", $url);
         $url = str_replace("saude/", "", $url);
         $url = str_replace("beleza/", "", $url);
         $url = end($url);
-        
-        // $url = array_splice("saude/");
-        // $url = array_splice("beleza/");
-        
-        // echo $url ."<br>";
-        
-       
         return $url;  
-    }
-        
-    
+    }   
 }
