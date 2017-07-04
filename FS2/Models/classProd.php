@@ -1,6 +1,6 @@
 <?php
-require_once 'conexao.php';
-class Produtos{
+
+class classProd extends Connect{
     private $pdo;
     private $tbClientes;
     private $tbCompra;

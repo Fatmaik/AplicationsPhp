@@ -1,8 +1,8 @@
 <?php
 // classe de conexao ao banco de dados farmacia
-class Conexao{
+class Connect{
     
-    public function connect() {
+    public function __construct() {
         global $config;
         $host   = $config["host"];
         $dbname = $config["dbname"];
