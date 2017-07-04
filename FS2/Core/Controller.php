@@ -1,14 +1,14 @@
 <?php
-
 class Controller {
 
-    public function loadView($viewName, $viewData = array()) {
+    public function loadView($viewName, $viewData = array() ) {
+    	global $config;
         extract($viewData);
-        include "Views/".$viewName.".php";
+        require_once "Views/".$viewName.".php";
     }
 
-    public function loadTemplate($viewName, $viewData = array()) {
-        include "Views/".$viewName.".php";
+    public function loadTemplate($viewName, $viewData = array()){
+        global $config;
+        require_once "Views/Template.php";
     }
-
 }

@@ -3,11 +3,18 @@
 class homeController extends Controller {
 
     public function index() {
-        $this->loadTemplate("LojaVirtual");
+        
 
-        $produtos = new Produtos();
+        $produtos = new classProd();
+    
+
+
+        $dados["medicamentos"] = $produtos->info("medicamentos");
+        $dados["beleza"] = $produtos->info("beleza");
+        $dados["saude"] = $produtos->info("saude");
+        
        
-        $produtos= new Produtos($conexao);
+        $this->loadView("Template", $dados);
 
         
     }

@@ -16,5 +16,7 @@
         <a class="Site" href=""><img src="../Assets/css/EstiloIndex/farmacia.png" alt="Site"></a>
         <a class="LV" href=""><img src="../Assets/css/EstiloIndex/loja.png" alt="loja"></a>
     </article>
+
+    <?php $this->loadView($viewName, $viewData) ?>
 </body>
 </html>

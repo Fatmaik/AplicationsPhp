@@ -16,11 +16,17 @@
         <div class="prodAll">
             <p class="info">Todos os Produtos<hr></p>
             <?php 
-            echo $produtos->info("medicamentos");
-            echo $produtos->info("saude");
-            echo $produtos->info("beleza");
+
+            $this->loadView($viewName, $viewData);
+            // $produtos = new classProd();
+            // echo ;
+            // echo $produtos->info("saude");
+            // echo $produtos->info("beleza");
+            echo $medicamentos;
+            echo $beleza;
+            echo $saude;
             ?>            
-            <p>test</p>
+            
         </div>
 
         

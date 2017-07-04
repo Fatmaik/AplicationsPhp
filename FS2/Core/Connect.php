@@ -1,25 +1,18 @@
 <?php
-// classe de conexao ao banco de dados farmacia
+
 class Connect{
-    
+    // variavel que retornara a conexao com o banco de dados
+    protected $dbase;
+
     public function __construct() {
         global $config;
+
         $host   = $config["host"];
         $dbname = $config["dbname"];
-        $dbuser = $config["dbname"];
+        $dbuser = $config["dbuser"];
         $dbpass = $config["dbpass"];
 
-        $dsn = "mysql:dbname=".$dbname."host=.".$host;
-
-        try{
-            return $pdo = new \PDO($dsn, $dbuser, $dbpass);
-        }catch(PDOException $e) {
-            echo "falha: " .$e->getMessage();
-        }
-        if($pdo) {
-            echo "conectado";
-        }else{
-            echo " nao";
-        }
+        $dsn = "mysql:dbname=".$dbname.";host=".$host;
+        $this->dbase = new \PDO($dsn, $dbuser,  $dbpass);  
     }
 }

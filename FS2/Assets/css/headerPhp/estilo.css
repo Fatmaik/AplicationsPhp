@@ -17,14 +17,12 @@ body{
     color: white;
     margin-left: 300px;
     padding-left: 180px;
-    margin-top: -19px;
+    margin-top: -18px;
 }
 /*fim do estilo do header*/
 
 /*inicio do estilo da Section*/
-section{
-    /*background-color: azure;*/
-}
+
 .logo{
     margin-left: 350px;
     margin-top: 30px;

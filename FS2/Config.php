@@ -1,14 +1,14 @@
 <?php
 
-define("ambiente", "teste");
+define("AMBIENTE", "teste");
 
 global $config;
 
 $config = array();
 
-if(ambiente == "teste") {
+if(AMBIENTE == "teste") {
     $config["dbname"] = "farmacia";
     $config["host"]   = "localhost";
-    $comfig["dbuser"] = "root";
+    $config["dbuser"] = "root";
     $config["dbpass"] = "rancid";
 }
