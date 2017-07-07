@@ -3,14 +3,12 @@ $(document).ready(function() {
     hover();
     boxSetores();
     setor();
-    
-
     Login()
 })
 function Login() {
     $("#Plogin").click(function() {
         $("#loginCadastro").css("display", "block");
-         $("#boxMedicamentos").css("display", "none");
+        $("#boxMedicamentos").css("display", "none");
         $("#boxSaude").css("display", "none");
         $("#boxBeleza").css("display", "none");
 
@@ -19,7 +17,6 @@ function Login() {
         $("#loginCadastro").css("display", "none");
     });
 }
-
 
 // funcao para redirecionamento de filtor de produtos retornando a url
 function boxSetores() {

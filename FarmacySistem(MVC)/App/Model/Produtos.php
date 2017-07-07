@@ -44,6 +44,7 @@ class Produtos extends Connect{
         return $array;
     }
 
+    // metodo para capturar o conteudo do action e armazenar o item como tirulo de pesquisa na box de pesquisa
     public function getUrl() {
         $url = explode("index.php/", $_SERVER["PHP_SELF"]);
         $url = str_replace("medicamentos/", "", $url);

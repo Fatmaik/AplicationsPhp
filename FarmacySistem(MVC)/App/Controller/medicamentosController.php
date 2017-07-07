@@ -2,12 +2,16 @@
 
 class medicamentosController extends Controller{
 
+    // todos os metodos possuem a mesma logica, porem 
+    // isso e necessario pois cada metodo eh a action acessada
+
     public function index() {
         $dados = array();
         $produtos = new Produtos();
         $dados["iten"] = $produtos->Select("medicamentos");
         $this->loadTemplate("medicamentos", $dados);  
     }
+
     public function Alergia() {
         $dados = array();
         $produtos = new Produtos();
