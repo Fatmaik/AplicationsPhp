@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LojaVirtual</title>
     <link rel="stylesheet" href="../Assets/css/EstiloLV/estilo.css">
-    <script src="Assets/js/jquery.js"></script>
+    <script src="Assets/js/library/jquery.js"></script>
     <script src="Assets/js/jsLV.js"></script>
 </head>
 <body>

@@ -7,6 +7,7 @@ class Controller{
     }
 
     public function loadTemplate($viewName, $viewData = array()) {
+        extract($viewData);
         require_once "App/View/Template.php";
     }
 }
