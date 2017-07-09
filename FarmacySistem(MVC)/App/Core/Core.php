@@ -37,12 +37,9 @@ class Core{
             $currentController = "HomeController";
             $currentAction     = "index";
         }
-        require_once "App/Core/Controller.php";
-
         // chamando o controller atual
         $c = new $currentController();
         // chamando a action atual e parametros da url amigavel,caso exista algum
         call_user_func_array(array($c, $currentAction), $params);
-
     }
 }

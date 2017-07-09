@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php
-    require_once 'header.php';
+    $this->loadView("header");
     $item = new Produtos();
 
     // alteracao de titulo de itens pesquisados
@@ -25,13 +25,14 @@
     <main class="main">
         <div class="prodAll">
             <p class="info"><?php echo ucfirst($prod);?> <hr></p>
-            <?php $this->loadView($viewName, $viewData);   ?>            
-        </div>   
+            <?php $this->loadView($viewName, $viewData);?>            
+        </div>
+        <img id="cartoes" src="../Assets/css/EstiloLV/img/cartoes.png" alt="cartoes">   
     </main>
     
     <footer>
         <p>Desenvolvido por Dionathan (Site de Estudo)</p>
-        <img id="cartoes" src="../Assets/css/EstiloLV/img/cartoes.png" alt="cartoes">
+        
     
     </footer>
 </body>

@@ -1,59 +1,43 @@
 <?php
 class saudeController extends Controller{
+    private $produtos;
+
+    public function __construct() {
+        $this->produtos = new Produtos();
+    }
 
     public function index() {
-        $dados = array();
-        $produtos = new Produtos();
-        $dados["iten"] = $produtos->Select("saude");
+        $dados["iten"] = $this->produtos->Select("saude");
         $this->loadTemplate("saude", $dados);
     }
     
     public function Dentadura(){
-        $dados = array();
-        $produtos = new Produtos();
-        $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro("saude", $produtos->getUrl());
-        $this->loadTemplate("saude/". $produtos->getUrl(), $dados);   
+        $dados["iten"] = $this->produtos->filtro("saude", $this->produtos->getUrl());
+        $this->loadTemplate("saude/". $this->produtos->getUrl(), $dados);   
     }
 
     public function Nasal(){
-        $dados = array();
-        $produtos = new Produtos();
-        $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro("saude", $produtos->getUrl());
-        $this->loadTemplate("saude/". $produtos->getUrl(), $dados);  
+        $dados["iten"] = $this->produtos->filtro("saude", $this->produtos->getUrl());
+        $this->loadTemplate("saude/". $this->produtos->getUrl(), $dados);
     }
 
     public function Lentes(){
-        $dados = array();
-        $produtos = new Produtos();
-        $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro("saude", $produtos->getUrl());
-        $this->loadTemplate("saude/". $produtos->getUrl(), $dados); 
+        $dados["iten"] = $this->produtos->filtro("saude", $this->produtos->getUrl());
+        $this->loadTemplate("saude/". $this->produtos->getUrl(), $dados); 
     }
 
     public function Preservativos(){
-        $dados = array();
-        $produtos = new Produtos();
-        $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro("saude", $produtos->getUrl());
-        $this->loadTemplate("saude/". $produtos->getUrl(), $dados);  
+        $dados["iten"] = $this->produtos->filtro("saude", $this->produtos->getUrl());
+        $this->loadTemplate("saude/". $this->produtos->getUrl(), $dados);;  
     }
 
     public function Protetor(){
-        $dados = array();
-        $produtos = new Produtos();
-        $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro("saude", $produtos->getUrl());
-        $this->loadTemplate("saude/". $produtos->getUrl(), $dados);   
+        $dados["iten"] = $this->produtos->filtro("saude", $this->produtos->getUrl());
+        $this->loadTemplate("saude/". $this->produtos->getUrl(), $dados);   
     }
-    
 
     public function Suplementos(){
-        $dados = array();
-        $produtos = new Produtos();
-        $iten = $produtos->getUrl();
-        $dados["iten"] = $produtos->filtro("saude", $produtos->getUrl());
-        $this->loadTemplate("saude/". $produtos->getUrl(), $dados);  
+        $dados["iten"] = $this->produtos->filtro("saude", $this->produtos->getUrl());
+        $this->loadTemplate("saude/". $this->produtos->getUrl(), $dados);  
     }
 }
