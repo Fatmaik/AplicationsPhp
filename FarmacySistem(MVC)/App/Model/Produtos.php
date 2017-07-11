@@ -33,7 +33,7 @@ class Produtos extends Connect{
     }
     public function Select($tbname, $filtro = "") {
         $array = array();
-        $query = $this->dbase->query("SELECT * FROM $tbname ");
+        $query = $this->dbase->query("SELECT * FROM $tbname ORDER BY RAND() ");
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $array;
     }
