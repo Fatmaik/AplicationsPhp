@@ -1,4 +1,6 @@
 /*========== INICIO DO ESTILO DO HEADER.PHP =============*/
+
+
 body{
     margin: 0px;
 }
@@ -58,12 +60,11 @@ body{
 }
 
 #carrinhoElogin {
-    float: right;
-    margin-right: 220px;
+    margin-left: 1200px;
     margin-top: -50px;
     width: 290px;
     height: 50px;
-   
+
 }
 #carrinhoElogin p:hover{
     cursor: pointer;
@@ -136,7 +137,7 @@ li{
 
 /*começo do estilo do Article*/
 .article{
-   background-color: rgba(247, 247, 247, 0.8)
+background-color: rgba(247, 247, 247, 0.8)
 }
 
 #boxMedicamentos{
@@ -285,7 +286,7 @@ li{
 }
 
 #form .inputArea{
-     width: 170px;
+    width: 170px;
 }
 
 #inputSexo #sexo{
@@ -370,3 +371,199 @@ span{
 }
 /*========== FIM DO ESTILO DO HEADER.PHP =============*/
 
+/*estilo para teça de 15*/
+
+/*estilo pra tela de 18*/
+@media only screen and (max-width: 1680px) {
+    .cadPed{
+        width: 100%;
+        max-width: 1680px;
+    }
+
+    .logo{
+        margin-left: 230px;
+    }
+
+    .campoBusca{
+        margin-left: 480px;
+    }
+
+    #carrinhoElogin {
+        margin-left: 1050px;
+    
+    }
+    
+    ul{
+        margin-left: 300px; 
+    }
+    
+    #boxMedicamentos{
+        margin: auto;
+    }
+
+    #boxSaude{
+        margin: auto;
+    }
+
+    #boxBeleza{
+        margin: auto;
+    }
+    
+    #loginCadastro {
+        width: 100%;
+        max-width: 1680px;
+    }
+
+    #cadastro{
+        margin-left: 210px;
+    }
+    
+    #login{
+        margin-left: 710px;
+    }
+}
+
+/*estilo para teça de 15*/
+@media only screen and (max-width:1400px) {
+    
+    .cadPed{
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .logo{
+        margin-left: 150px;
+    }
+
+    .campoBusca{
+        margin-left: 400px;
+    }
+
+    .procura{
+        margin-left: 20px;
+    }
+
+    #carrinhoElogin {
+        margin-left: 940px;
+    
+    }
+    
+    ul{
+        margin-left: 300px; 
+    }
+    
+    #boxMedicamentos{
+        margin: auto;
+    }
+
+    #boxSaude{
+        margin: auto;
+    }
+
+    #boxBeleza{
+        margin: auto;
+    }
+    
+    #loginCadastro {
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    #cadastro{
+        margin-left: 170px;
+    }
+    
+    #login{
+        margin-left: 670px;
+    }
+
+}
+
+/*estilo para teça de 12*/
+@media only screen and (max-width:1024px) {
+    
+    .cadPed{
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .logo{
+        margin-left: 170px;
+        width: 150px;
+    }
+
+    .campoBusca{
+        margin-left: 330px;
+        margin-top: -50px;
+        width: 400px;
+        height: 25px;
+    }
+
+    .procura{
+        margin-left: 20px;
+        margin-top: 4px;
+        width: 300px;
+        height: 15px;
+        font-size: 14px;
+    }
+    .submit{
+        width: 30px;
+        height: 20px;
+        margin-left: 360px;
+        margin-top: -20px;
+    }
+
+    #carrinhoElogin {
+        margin-left: 740px;
+    
+    }
+
+    #acount{
+        width: 40px;
+        margin-top:10px;
+    }
+
+    #Plogin{
+        font-size: 12px;
+        margin-left: 40px;
+        margin-top: -35px;
+    }
+
+    #carrinho{
+        width: 40px;
+        margin-left: -50px;
+        margin-top: -40px;
+    }
+    
+    ul{
+        margin-left: 300px; 
+    }
+    
+    #boxMedicamentos{
+        margin: auto;
+    }
+
+    #boxSaude{
+        margin: auto;
+    }
+
+    #boxBeleza{
+        margin: auto;
+    }
+    
+    #loginCadastro {
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    #cadastro{
+        margin-left: 170px;
+    }
+    
+    #login{
+        margin-left: 670px;
+    }
+
+    
+
+}
