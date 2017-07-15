@@ -19,7 +19,8 @@
         $prod = $item->getUrl();
     }else{
         $prod = "Todos os Produtos";
-    }  
+    }
+    echo $viewName;  
     ?>
     
     <main class="main">

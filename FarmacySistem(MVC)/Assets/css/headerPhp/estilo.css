@@ -479,12 +479,61 @@ span{
 
 }
 
+@media only screen and (max-width : 1265px) {
+    .cadPed{
+        width: 100%;
+        max-width: 1265px;
+    }
+
+    .logo{
+        margin-left: 80px;
+    }
+
+    .campoBusca{
+        margin-left: 320px;
+    }
+
+    #carrinhoElogin {
+        margin-left: 860px;
+    
+    }
+    
+    ul{
+        margin-left: 300px; 
+    }
+    
+    #boxMedicamentos{
+        margin: auto;
+    }
+
+    #boxSaude{
+        margin: auto;
+    }
+
+    #boxBeleza{
+        margin: auto;
+    }
+    
+    #loginCadastro {
+        width: 100%;
+        max-width: 1680px;
+    }
+
+    #cadastro{
+        margin-left: 210px;
+    }
+    
+    #login{
+        margin-left: 710px;
+    }
+}
+
 /*estilo para teça de 12*/
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1155px) {
     
     .cadPed{
         width: 100%;
-        max-width: 1024px;
+        max-width: 1155px;
     }
 
     .logo{
@@ -530,8 +579,15 @@ span{
     }
 
     #carrinho{
-        width: 40px;
-        margin-left: -50px;
+        float: left;
+        width: 38px;
+        margin-left: 105px;
+        margin-top: -48px;
+    }
+    
+    #Pcarrinho{
+        font-size: 12px;
+        margin-left: 145px;
         margin-top: -40px;
     }
     
