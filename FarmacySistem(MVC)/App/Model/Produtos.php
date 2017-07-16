@@ -31,7 +31,7 @@ class Produtos extends Connect{
     public function getClientes() {
         return $this->tbClientes;
     }
-    public function Select($tbname, $filtro = "") {
+    public function Select($tbname) {
         $array = array();
         $query = $this->dbase->query("SELECT * FROM $tbname ORDER BY RAND() ");
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
@@ -52,5 +52,13 @@ class Produtos extends Connect{
         $url = str_replace("beleza/", "", $url);
         $url = end($url);
         return $url;  
+    }
+
+    public function ver($url, $id) {
+        echo $this->getUrl();
+        $array = array();
+        $query = $this->dbase->query("SELECT * FROM medicamentos WHERE id = $id ");
+        $array = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $array;
     }   
 }

@@ -4,6 +4,8 @@ $(document).ready(function() {
     boxSetores();
     setor();
     Login();
+    getItenName();
+    
 })
 function Login() {
     $("#Plogin").click(function() {
@@ -106,4 +108,21 @@ function setor() {
     $("#beleza").click(function() {
         window.location.href = 'http://localhost:8080/Beleza';
     })
+}
+
+// metodo para pegar o nome do produto clicado para adcionar ao carrinho
+function getItenName() {
+    $(".prod").click(function() {
+        var nome = $(this).parent().text();
+        var tra = nome.split("\n");
+        tra.splice(0,3);
+        
+        // $("#nomeProd").text(tra[0]);
+        $("#info h2").text("t");
+    })
+
+    
+        
+    
+        
 }
