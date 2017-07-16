@@ -3,7 +3,7 @@ $(document).ready(function() {
     hover();
     boxSetores();
     setor();
-    Login()
+    Login();
 })
 function Login() {
     $("#Plogin").click(function() {

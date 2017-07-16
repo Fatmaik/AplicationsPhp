@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../Assets/css/EstiloLV/estilo.css">
     <script src="Assets/js/library/jquery.js"></script>
     <script src="Assets/js/jsLV.js"></script>
+    <script src="Assets/js/ajax.js"></script>
 </head>
 <body>
     <?php
@@ -32,8 +33,6 @@
     
     <footer>
         <p>Desenvolvido por Dionathan (Site de Estudo)</p>
-        
-    
     </footer>
 </body>
 </html>
