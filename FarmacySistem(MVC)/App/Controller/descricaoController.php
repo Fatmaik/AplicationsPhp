@@ -6,19 +6,17 @@ class descricaoController extends Controller {
         $this->produtos = new Produtos();
     }
 
-    public function index() {
-        $dados = array();
-        $dados["iten"] = $this->produtos->ver("medicamentos", 1);
+    public function medicamentos($id) {
+        $dados["iten"] = $this->produtos->ver("medicamentos", $id);
         $this->loadTemplate("Descricao", $dados);
     }
-
-    public function ver($id) {
-        $dados = array();
-        $dados["iten"] = $this->produtos->ver("medicamentos", $id);
-
+    public function saude($id) {
+        $dados["iten"] = $this->produtos->ver("saude", $id);
         $this->loadTemplate("Descricao", $dados);
-
-        
+    }
+    public function beleza($id) {
+        $dados["iten"] = $this->produtos->ver("beleza", $id);
+        $this->loadTemplate("Descricao", $dados);
     }
 
 

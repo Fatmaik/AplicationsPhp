@@ -31,12 +31,15 @@ class Produtos extends Connect{
     public function getClientes() {
         return $this->tbClientes;
     }
+
     public function Select($tbname) {
         $array = array();
         $query = $this->dbase->query("SELECT * FROM $tbname ORDER BY RAND() ");
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $array;
     }
+
+    // metodo acha o item especifico que foi escolhido no menu de produtos
     public function filtro($tbname, $genero) {
         $array = array();
         $query = $this->dbase->query("SELECT * FROM $tbname WHERE genero = '$genero' " );
@@ -55,10 +58,10 @@ class Produtos extends Connect{
     }
 
     public function ver($url, $id) {
-        echo $this->getUrl();
-        $array = array();
-        $query = $this->dbase->query("SELECT * FROM medicamentos WHERE id = $id ");
+        $query = $this->dbase->query("SELECT * FROM $url WHERE id = '$id' ");
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $array;
-    }   
+    }
+
+   
 }

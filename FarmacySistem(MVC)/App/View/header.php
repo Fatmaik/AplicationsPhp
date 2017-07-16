@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Header</title>
-    <link rel="stylesheet" href="../Assets/css/headerPhp/estilo.css">
+    <link rel="stylesheet" href="Assets/css/headerPhp/estilo.css">
     <script src="../Assets/js/library/jquery.js"></script>
     <script src="../Assets/js/jsLV.js"></script>
 </head>
@@ -16,7 +16,7 @@
     </header>
     
     <section>
-        <img class="logo" src="../Assets/css/headerPhp/img/loja.png" alt="logo">
+        <img class="logo" src="Assets/css/headerPhp/img/loja.png" alt="logo">
         
         <form action="$_GET" method="LV.php" class="campoBusca">    
             <input class="procura" type="text" placeholder="O que você procura?">    
