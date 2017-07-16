@@ -103,6 +103,7 @@ ul{
 li{
     float: left;  
 }
+
 #medic{   
     margin-top: 10px;
     margin-left: 2px;
@@ -110,18 +111,28 @@ li{
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
+
+#medic:hover{
+    color: #6B8E23;
+}
+
 .imgSau{
     padding-left: 50px;
     padding-top: 3px;
 }
+
 #saude{   
     margin-top: 10px;
     margin-left: -8px;
     color: slategrey;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    
 }
+
+#saude:hover{
+    color: #6B8E23;
+}
+
 #beleza{
     margin-top: 10px;
     margin-left: 3px;
@@ -129,6 +140,11 @@ li{
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
+
+#beleza:hover{
+    color: #6B8E23;
+}
+
 .imgBel{
     margin-top: 3px;
     margin-left: 57px;
