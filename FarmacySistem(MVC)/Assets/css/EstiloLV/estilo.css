@@ -70,9 +70,13 @@ footer p{
     float: left;
     margin-left: 50px;
     width: 400px;
-    height: 350px;
-    background-color: aqua;
+    max-height: 580px;
     margin-bottom: 20px;
+}
+
+#fotoProd img{
+    width: 100%;
+    max-height: 580px;
 }
 
 #info{

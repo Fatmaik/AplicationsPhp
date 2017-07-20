@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Header</title>
-    <link rel="stylesheet" href="Assets/css/headerPhp/estilo.css">
-    <script src="../Assets/js/library/jquery.js"></script>
-    <script src="../Assets/js/jsLV.js"></script>
+    <link rel="stylesheet" href="/Assets/css/headerPhp/estilo.css">
+    <script src="/Assets/js/library/jquery.js"></script>
+    <script src="/Assets/js/jsLV.js"></script>
 </head>
 <body>
     <header class="cadPed">
@@ -16,29 +16,29 @@
     </header>
     
     <section>
-        <img class="logo" src="Assets/css/headerPhp/img/loja.png" alt="logo">
+        <img class="logo" src="/Assets/css/headerPhp/img/loja.png" alt="logo">
         
         <form action="$_GET" method="LV.php" class="campoBusca">    
             <input class="procura" type="text" placeholder="O que você procura?">    
-            <input class="submit" type="image" src="../Assets/css/headerPhp/img/lupa.png" value="submit">              
+            <input class="submit" type="image" src="/Assets/css/headerPhp/img/lupa.png" value="submit">              
         </form>
         <div id="carrinhoElogin">
-            <img id="acount" src="../Assets/css/headerPhp/img/account-outline.png" alt=""><p id="Plogin">Login<br> e cadastro</p>
-            <img id="carrinho" src="../Assets/css/headerPhp/img/cart-outline.png" alt=""> <p id="Pcarrinho">Carrinho<br>R$  </p>
+            <img id="acount" src="/Assets/css/headerPhp/img/account-outline.png" alt=""><p id="Plogin">Login<br> e cadastro</p>
+            <img id="carrinho" src="/Assets/css/headerPhp/img/cart-outline.png" alt=""> <p id="Pcarrinho">Carrinho<br>R$  </p>
         </div>
         <ul>   
-            <li class="imgMed" id="tituloMedic"><img src="../Assets/css/headerPhp/img/medicamentos.png" alt=""width="35px"></li>
+            <li class="imgMed" id="tituloMedic"><img src="/Assets/css/headerPhp/img/medicamentos.png" alt=""width="35px"></li>
             <li id="medic">Medicamentos</li>   
-            <li class="imgSau"><img src="../Assets/css/headerPhp/img/saude.png" alt="" width="53px"></li>
+            <li class="imgSau"><img src="/Assets/css/headerPhp/img/saude.png" alt="" width="53px"></li>
             <li id="saude">Saude</li>
-            <li class="imgBel"><img src="../Assets/css/headerPhp/img/escova.png" alt="" width="37px"></li>
+            <li class="imgBel"><img src="/Assets/css/headerPhp/img/escova.png" alt="" width="37px"></li>
             <li id="beleza">Beleza</li>
         </ul>  
     </section>
     <article class="article">
         
             <div id="boxMedicamentos">
-                <img src="../Assets/css/headerPhp/img/tituloMedic.png" alt="" >
+                <img src="/Assets/css/headerPhp/img/tituloMedic.png" alt="" >
                 <hr>
                 <p>Alergia</p>
                 <p>Diabete</p>
@@ -51,7 +51,7 @@
                 <p>Febre</p>
             </div>
             <div id="boxSaude">
-                <img src="../Assets/css/headerPhp/img/tituloSaude.png" alt="logosaude">
+                <img src="/Assets/css/headerPhp/img/tituloSaude.png" alt="logosaude">
                 <hr>
                 <p>Nasal</p>
                 <p>Lentes</p>
@@ -61,7 +61,7 @@
                 <p>Protetor</p>
             </div>
             <div id="boxBeleza">
-                <img src="../Assets/css/headerPhp/img/tituloBeleza.png" alt="logoBeleza">
+                <img src="/Assets/css/headerPhp/img/tituloBeleza.png" alt="logoBeleza">
                 <hr>
                 <p>Cabelo</p>
                 <p>Maquiagem</p>
@@ -76,7 +76,7 @@
     <div id="loginCadastro">
         
         <div id="cadastro">
-            <img src="../Assets/css/headerPhp/img/account-card-details.png" alt="cadastrar" width="50px">
+            <img src="/Assets/css/headerPhp/img/account-card-details.png" alt="cadastrar" width="50px">
             
             <form action="" id="form">
                 <h2>QUERO ME CADASTRAR</h2>
@@ -120,12 +120,12 @@
         
         <div id="login">
             
-            <img src="../Assets/css/headerPhp/img/account-key.png" alt="login" width="50px">
+            <img src="/Assets/css/headerPhp/img/account-key.png" alt="login" width="50px">
 
             
             <form id="form2" action="">
                 <h2>JA POSSUO MINHA CONTA</h2>
-                <img id="closePag" src="../Assets/css/headerPhp/img/x1.png" alt="fechar pagina" width="30px">
+                <img id="closePag" src="/Assets/css/headerPhp/img/x1.png" alt="fechar pagina" width="30px">
                 
                 <label for="email">EMAIL</label>
                 <input type="email"><br><br>

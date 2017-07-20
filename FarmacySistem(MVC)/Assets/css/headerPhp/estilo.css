@@ -502,6 +502,7 @@ span{
     }
 
     .logo{
+        width: 80px;
         margin-left: 80px;
     }
 
@@ -532,15 +533,15 @@ span{
     
     #loginCadastro {
         width: 100%;
-        max-width: 1680px;
+        max-width: 1265px;
     }
 
     #cadastro{
-        margin-left: 210px;
+        margin-left: 40px;
     }
     
     #login{
-        margin-left: 710px;
+        margin-left: 549px;
     }
 }
 
@@ -629,11 +630,11 @@ span{
     }
 
     #cadastro{
-        margin-left: 170px;
+        margin-left: 3px;
     }
     
     #login{
-        margin-left: 670px;
+        margin-left: 502px;
     }
 
     

@@ -1,6 +1,4 @@
-
-<?php foreach($medicamentos as $info): ?>
-    
+<?php foreach($medicamentos as $info): ?>  
     <a href="/descricao/<?php echo $info['tabela'] ."/". $info['id'];?>">
         <p class="prod">
             <img class="img" src=<?php echo $info["local_armazem"] . $info["nome"] . ".jpg";?> alt='Medicamento'><br>
