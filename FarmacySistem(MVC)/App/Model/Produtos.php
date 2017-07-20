@@ -50,9 +50,11 @@ class Produtos extends Connect{
     // metodo para capturar o conteudo do action e armazenar o item como tirulo de pesquisa na box de pesquisa
     public function getUrl() {
         $url = explode("index.php/", $_SERVER["PHP_SELF"]);
+        $url = str_replace("/index.php", "Todos os Produtos", $url);
         $url = str_replace("medicamentos/", "", $url);
         $url = str_replace("saude/", "", $url);
         $url = str_replace("beleza/", "", $url);
+        $url = str_replace("descricao/", "", $url);
         $url = end($url);
         return $url;  
     }

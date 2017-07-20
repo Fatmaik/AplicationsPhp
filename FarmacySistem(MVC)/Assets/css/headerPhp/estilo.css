@@ -180,6 +180,7 @@ background-color: rgba(247, 247, 247, 0.8)
 
 #boxMedicamentos p:hover{
     background-color: #F5F5F5;
+    cursor: pointer;
 }
 
 #boxSaude{
@@ -206,6 +207,7 @@ background-color: rgba(247, 247, 247, 0.8)
 
 #boxSaude p:hover{
     background-color: #F5F5F5;
+    cursor: pointer;
 }
 
 #boxBeleza{
@@ -232,6 +234,7 @@ background-color: rgba(247, 247, 247, 0.8)
 
 #boxBeleza p:hover{
     background-color: #F5F5F5;
+    cursor: pointer;
 }
 
 #hr{
@@ -431,11 +434,11 @@ span{
     }
 
     #cadastro{
-        margin-left: 210px;
+        margin-left: 300px;
     }
     
     #login{
-        margin-left: 710px;
+        margin-left: 800px;
     }
 }
 
@@ -486,6 +489,7 @@ span{
     }
 
     #cadastro{
+        margin-top: 50px;
         margin-left: 170px;
     }
     
@@ -495,14 +499,14 @@ span{
 
 }
 
-@media only screen and (max-width : 1265px) {
+@media only screen and (max-width : 1295px) {
     .cadPed{
         width: 100%;
         max-width: 1265px;
     }
 
     .logo{
-        width: 80px;
+        width: 180px;
         margin-left: 80px;
     }
 
@@ -537,16 +541,16 @@ span{
     }
 
     #cadastro{
-        margin-left: 40px;
+        margin-left: 140px;
     }
     
     #login{
-        margin-left: 549px;
+        margin-left: 630px;
     }
 }
 
 /*estilo para teça de 12*/
-@media only screen and (max-width:1155px) {
+@media only screen and (max-width:1187px) {
     
     .cadPed{
         width: 100%;
@@ -562,21 +566,21 @@ span{
         margin-left: 330px;
         margin-top: -50px;
         width: 400px;
-        height: 25px;
+        height: 35px;
     }
 
     .procura{
         margin-left: 20px;
         margin-top: 4px;
         width: 300px;
-        height: 15px;
+        height: 20px;
         font-size: 14px;
     }
     .submit{
         width: 30px;
-        height: 20px;
+        height: 25px;
         margin-left: 360px;
-        margin-top: -20px;
+        margin-top: -23px;
     }
 
     #carrinhoElogin {
@@ -626,15 +630,16 @@ span{
     
     #loginCadastro {
         width: 100%;
-        max-width: 1024px;
+        max-width: 1187px;
     }
 
     #cadastro{
-        margin-left: 3px;
+        margin-top: 80px;
+        margin-left: 113px;
     }
     
     #login{
-        margin-left: 502px;
+        margin-left: 602px;
     }
 
     

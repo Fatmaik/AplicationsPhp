@@ -15,12 +15,11 @@
     $item = new Produtos();
 
     // alteracao de titulo de itens pesquisados
-    if($item->getUrl() != "/index.php") {
-        $prod = $item->getUrl();
+    if(is_numeric($item->getUrl() ) ) {
+        $prod = "Descrições Gerais";
     }else{
-        $prod = "Todos os Produtos";
+        $prod = $item->getUrl();
     }
-    
     ?>
     
     <main class="main">
