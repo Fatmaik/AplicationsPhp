@@ -13,10 +13,12 @@
         <p id="quantidade">1 <br><span1 id="und">UND</span1></p>
         <img id="mais" src="/Assets/css/EstiloLV/img/mais.png" alt="" width="32">
         
-        <div id="divCarrinho">
-            <a href="/carrinho"></a><img src="/Assets/css/EstiloLV/img/carrinho.png" alt="carrinho de compras" width="50px">
-            <p>COMPRAR</p>
-        </div>
+        <a href="/carrinho">
+            <div id="divCarrinho">
+                <img src="/Assets/css/EstiloLV/img/carrinho.png" alt="carrinho de compras" width="50px">
+                <p>COMPRAR</p>
+            </div>
+        </a>
     </div>
     <?php endforeach;?>
 </div>
