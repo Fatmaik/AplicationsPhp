@@ -12,19 +12,33 @@ class descricaoController extends Controller {
     }
 
     public function Medicamentos($id) {
-        $dados["iten"] = $this->produtos->ver("medicamentos", $id);
-        $this->loadTemplate("descricao", $dados);
-        
+
+        if(!empty($id)) {
+            $dados["iten"] = $this->produtos->ver("medicamentos", $id);
+            $this->loadTemplate("descricao", $dados);
+        }else{
+            header("Location:/error");
+        }   
     }
 
     public function saude($id) {
-        $dados["iten"] = $this->produtos->ver("saude", $id);
-        $this->loadTemplate("descricao", $dados);
+        
+        if(!empty($id)) {
+            $dados["iten"] = $this->produtos->ver("saude", $id);
+            $this->loadTemplate("descricao", $dados);
+        }else{
+            header("Location:/error");
+        }
     }
     
     public function beleza($id) {
-        $dados["iten"] = $this->produtos->ver("beleza", $id);
-        $this->loadTemplate("descricao", $dados);
+        
+        if(!empty($id)) {
+            $dados["iten"] = $this->produtos->ver("beleza", $id);
+            $this->loadTemplate("descricao", $dados);
+        }else{
+            header("Location:/error");
+        }
     }
 
 

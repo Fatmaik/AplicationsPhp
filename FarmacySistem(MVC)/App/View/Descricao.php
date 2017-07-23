@@ -14,7 +14,7 @@
         <img id="mais" src="/Assets/css/EstiloLV/img/mais.png" alt="" width="32">
         
         <div id="divCarrinho">
-            <img src="/Assets/css/EstiloLV/img/carrinho.png" alt="carrinho de compras" width="50px">
+            <a href="/carrinho"></a><img src="/Assets/css/EstiloLV/img/carrinho.png" alt="carrinho de compras" width="50px">
             <p>COMPRAR</p>
         </div>
     </div>

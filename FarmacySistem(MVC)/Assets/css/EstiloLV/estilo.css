@@ -4,8 +4,9 @@ body{
 }
 .prodAll{
     margin-left: 480px;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
     width: 890px;
+    border: 6px solid #F5F5F5;
 }
 
 .info{
@@ -22,7 +23,7 @@ body{
     display: inline-block;
     border: 1px solid silver;
     border-radius: 10px;
-    margin-left: 32px;
+    margin-left: 30px;
     background-color: white;
     width: 180px;
     
