@@ -6,10 +6,12 @@
         <th>Ação</th>
     </tr>  
     <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
+        <?php foreach($item as $itens):?>
+        <td><img src="<?php  echo "/" .  $itens["local_armazem"] . $itens["nome"] . ".jpg";?>" alt="" border="0" width="60"></td>
+        <td><?php echo strtoupper($itens["nome"]);?></td>
+        <td>R$ <?php echo $itens["valor"];?></td>
         <td>4</td>
+        <?php endforeach;?>
     </tr>
-    
+
 </table>

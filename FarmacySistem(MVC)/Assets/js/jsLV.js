@@ -5,6 +5,7 @@ $(document).ready(function() {
     setor();
     Login();
     getItenName();
+    setInterval("TrocaImgHead()", 1000);
     
 })
 function Login() {
@@ -119,10 +120,17 @@ function getItenName() {
         
         // $("#nomeProd").text(tra[0]);
         $("#info h2").text("t");
-    })
+    }) 
+}
 
-    
-        
-    
-        
+function TrocaImgHead() {
+    var time = new Date();
+
+    if(time.getSeconds() <= 20 && time.getSeconds() > 0) {
+        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/cover.jpg");
+    }else if(time.getSeconds() <= 40 && time.getSeconds() > 20) {
+        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/promocaocarinho.png");
+    }else if(time.getSeconds() <= 60 && time.getSeconds() > 40) {
+        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/optimemory.jpg");
+    }
 }

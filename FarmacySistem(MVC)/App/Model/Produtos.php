@@ -29,13 +29,14 @@ class Produtos extends Connect{
         $url = str_replace("saude/", "", $url);
         $url = str_replace("beleza/", "", $url);
         $url = str_replace("descricao/", "", $url);
+        $url = str_replace("carrinho/", "MEU CARRINHO", $url);
         $url = end($url);
         return $url;  
     }
 
     // funcoa utilizada para redirecionar o produto selecionado para a area de descrição e logo apos, para o carrinho
-    public function ver($url, $id) {
-        $query = $this->dbase->query("SELECT * FROM $url WHERE id = '$id' ");
+    public function ver($tabela, $id) {
+        $query = $this->dbase->query("SELECT * FROM $tabela WHERE id = '$id' ");
         $array = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $array;
     }
