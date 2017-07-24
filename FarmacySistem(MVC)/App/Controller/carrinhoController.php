@@ -16,10 +16,12 @@ class CarrinhoController extends Controller{
     }
 
     public function saude($id) {
-
+        $dados['item'] = $this->produtos->ver("medicamentos", $id);
+        $this->loadTemplate("carrinho", $dados);
     }
 
     public function beleza($id) {
-
+        $dados['item'] = $this->produtos->ver("medicamentos", $id);
+        $this->loadTemplate("carrinho", $dados);
     }
 }

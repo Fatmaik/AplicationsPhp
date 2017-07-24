@@ -6,6 +6,7 @@ $(document).ready(function() {
     Login();
     getItenName();
     setInterval("TrocaImgHead()", 1000);
+    // TrocaImgHead();
     
 })
 function Login() {
@@ -125,12 +126,19 @@ function getItenName() {
 
 function TrocaImgHead() {
     var time = new Date();
-
-    if(time.getSeconds() <= 20 && time.getSeconds() > 0) {
+    var segundos = time.getSeconds();
+    
+    $("#opcao1").click(function() {
         $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/cover.jpg");
-    }else if(time.getSeconds() <= 40 && time.getSeconds() > 20) {
+    });
+
+    $("#opcao2").click(function() {
         $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/promocaocarinho.png");
-    }else if(time.getSeconds() <= 60 && time.getSeconds() > 40) {
-        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/optimemory.jpg");
+    });
+
+    if(segundos <= 30 && segundos > 0) {
+        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/cover.jpg");
+    }else if(segundos <= 60 && segundos > 30) {
+        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/promocaocarinho.png");
     }
 }

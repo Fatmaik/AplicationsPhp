@@ -13,19 +13,16 @@
     <?php
     $this->loadView("header");
     $item = new Produtos();
-
-    // alteracao de titulo de itens pesquisados
-    if(is_numeric($item->getUrl() ) ) {
-        $prod = "Descrições Gerais";
-    }else{
-        $prod = $item->getUrl();
-    }
+    $prod = $item->getUrl();
     ?>
     
     <div id="headTemplate">
-        <img id="imgHead" src="/Assets/css/EstiloLv/img/promocaocarinho.png" alt="">
+        <img id="imgHead" src="/Assets/css/EstiloLv/img/cover.jpg" alt="">
+        <div id="opcao1">.</div>
+        <div id="opcao2">.</div>
+        <div id="opcao3">.</div>
     </div>
-    
+
     <main class="main">
         <div class="prodAll">
             <p class="info"><?php echo ucfirst($prod);?> <hr></p>

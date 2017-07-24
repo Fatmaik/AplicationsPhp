@@ -11,9 +11,72 @@ body{
 }
 
 #headTemplate img{
-    margin-top: 25px;
+    margin-top: 20px;
     width: 100%;
     max-height: 280px;
+}
+
+#opcao1{
+    float: left;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6B8E23;
+    cursor: pointer;
+}
+
+#opcao1:hover{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid #6B8E23;
+    cursor: pointer;
+}
+
+#opcao2{
+    float: left;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6B8E23;
+    cursor: pointer;
+}
+
+#opcao2:hover{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid #6B8E23;
+    cursor: pointer;
+}
+
+#opcao3{
+    float: left;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6B8E23;
+    cursor: pointer;
+}
+
+#opcao3:hover{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid #6B8E23;
+    cursor: pointer;
 }
 
 .prodAll{
@@ -163,6 +226,31 @@ h1{
     font-size: 20px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilo do carrinho */
+#qt{
+    margin-left: -30px;
+    border-radius: 40px;
+    width: 100px;
+    height: 20px;
+    background-color: #6B8E23;
+    padding: 20px;
+}
+
+#qt #qts{
+    position: absolute;
+    margin-top: 5px;
+    color: white;
+    /* margin-left: px; */
+}
+
+#qt #img1{
+    margin-left: 5px;
+}
+
+#qt #img2{
+    margin-left: 25px;
 }
 
 @media only screen and (max-width: 1680px) {

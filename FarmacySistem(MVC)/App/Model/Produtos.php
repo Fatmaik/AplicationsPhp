@@ -30,7 +30,18 @@ class Produtos extends Connect{
         $url = str_replace("beleza/", "", $url);
         $url = str_replace("descricao/", "", $url);
         $url = str_replace("carrinho/", "MEU CARRINHO", $url);
+       
         $url = end($url);
+        // helper para retirar o numero do id ou "/" que sera setado no titulo da box acessada
+        while(is_numeric($url[-1]) || $url[-1] ==  "/") {
+            $url = str_replace($url[-1], " " , $url);
+        }
+
+        // se Titulo setado para a box de visualizavao do produto
+        if($url == "" || $url == " ") {
+            $url = "Descrições Gerais";
+        }
+
         return $url;  
     }
 
