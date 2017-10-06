@@ -52,5 +52,29 @@ class Produtos extends Connect{
         return $array;
     }
 
+    public function carrinho_add() {
+
+        // foreach($dados as $iten) {
+            // $cliente_id = $iten["id"];
+            // $nome = $inten["nome"];
+            // $marca = $inten["marca"];
+            // $descricao_prod = $inten["descricao_prod"];
+            // $local_armazen = $iten["local_armazen"];
+            // $quentidade = $iten["quantidade"];
+            // $tabela = $iten["tabela"];
+
+        //     $cliente_id = 20;
+        //     $nome = "test";
+        //     $marca = "test";
+        //     $descricao_prod = "test";
+        //     $local_armazen = "test";
+        //     $quentidade = 20;
+        //     $tabela = "test";
+
+        // }
+        // $query = $this->dbase->query("INSERT INTO carrinho VALUES(default, $cliente_id, $nome, $marca, $descricao_prod, $local_armazen, $quantidade, $tabela");
+        $this->dbase->query("INSERT INTO carrinho VALUES(default, 1, 'nome', 'marca', 'descricao_prod', 'local_armazen', 2, 'TEST' ");
+    }
+
    
 }

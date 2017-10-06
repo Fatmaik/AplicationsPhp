@@ -7,11 +7,13 @@ class CarrinhoController extends Controller{
     }
 
     public function index() {
-        $this->loadTemplate("carrinho", array());
+        echo "test";
     }
 
     public function medicamentos($id) {
         $dados['item'] = $this->produtos->ver("medicamentos", $id);
+
+        $this->produtos->carrinho_add();
         $this->loadTemplate("carrinho", $dados);
     }
 

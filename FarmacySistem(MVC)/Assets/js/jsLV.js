@@ -1,12 +1,11 @@
 $(document).ready(function() {
-    home()
+    home();
+    carrinho();
     hover();
     boxSetores();
     setor();
     Login();
     getItenName();
-    setInterval("TrocaImgHead()", 1000);
-    // TrocaImgHead();
     
 })
 function Login() {
@@ -56,7 +55,7 @@ function retiraAcentoDaUrl(url) {
         }
     }
     newUrl.replace(/[^a-zA-Z 0-9]/g, '').toUpperCase();
-    window.location.href = 'http://localhost:8080/'+ newUrl;
+    window.location.href = 'http://localhost/'+ newUrl;
 }
 
 
@@ -86,29 +85,36 @@ function hover() {
 // funcao para direcionar para home quando clicar no icone do site
 function home() {
     $(".logo").click(function() {
-        window.location.href = "http://localhost:8080";
+        window.location.href = "http://localhost";
+    })
+}
+
+// funcao para direcionar para o carrinho de compras ao clicar no icone;
+function carrinho() {
+    $("#carrinho").click(function() {
+        window.location.href = "http://localhost/carrinho";
     })
 }
 
 // funcao para selecionar todos os produtos do setor selecionado
 function setor() {
     $("#tituloMedic").click(function() {
-        window.location.href = 'http://localhost:8080/Medicamentos';
+        window.location.href = 'http://localhost/Medicamentos';
     })
     $("#medic").click(function() {
-        window.location.href = 'http://localhost:8080/Medicamentos';
+        window.location.href = 'http://localhost/Medicamentos';
     })
     $(".imgSau").click(function() {
-        window.location.href = 'http://localhost:8080/Saude';
+        window.location.href = 'http://localhost/Saude';
     })
     $("#saude").click(function() {
-        window.location.href = 'http://localhost:8080/Saude';
+        window.location.href = 'http://localhost/Saude';
     })
     $(".imgBel").click(function() {
-        window.location.href = 'http://localhost:8080/Beleza';
+        window.location.href = 'http://localhost/Beleza';
     })
     $("#beleza").click(function() {
-        window.location.href = 'http://localhost:8080/Beleza';
+        window.location.href = 'http://localhost/Beleza';
     })
 }
 
@@ -124,21 +130,21 @@ function getItenName() {
     }) 
 }
 
-function TrocaImgHead() {
-    var time = new Date();
-    var segundos = time.getSeconds();
+// function TrocaImgHead() {
+//     var time = new Date();
+//     var segundos = time.getSeconds();
     
-    $("#opcao1").click(function() {
-        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/cover.jpg");
-    });
+//     $("#opcao1").click(function() {
+//         $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/cover.jpg");
+//     });
 
-    $("#opcao2").click(function() {
-        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/promocaocarinho.png");
-    });
+//     $("#opcao2").click(function() {
+//         $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/promocaocarinho.png");
+//     });
 
-    if(segundos <= 30 && segundos > 0) {
-        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/cover.jpg");
-    }else if(segundos <= 60 && segundos > 30) {
-        $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/promocaocarinho.png");
-    }
-}
+//     if(segundos <= 30 && segundos > 0) {
+//         $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/cover.jpg");
+//     }else if(segundos <= 60 && segundos > 30) {
+//         $("#imgHead").attr("src", "/Assets/css/EstiloLv/img/promocaocarinho.png");
+//     }
+// }

@@ -13,6 +13,8 @@ class medicamentosController extends Controller{
     }
 
     public function Alergia() {
+        $test = $this->produtos->carrinho_add();
+        echo $test;
         $dados["iten"] = $this->produtos->filtro("medicamentos", $this->produtos->getUrl());
         $this->loadTemplate("medicamentos/". $this->produtos->getUrl(), $dados);
     }

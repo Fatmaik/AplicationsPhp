@@ -18,9 +18,6 @@
     
     <div id="headTemplate">
         <img id="imgHead" src="/Assets/css/EstiloLv/img/cover.jpg" alt="">
-        <div id="opcao1">.</div>
-        <div id="opcao2">.</div>
-        <div id="opcao3">.</div>
     </div>
 
     <main class="main">
