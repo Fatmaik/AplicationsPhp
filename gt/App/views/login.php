@@ -16,6 +16,7 @@
 			<div class="form-group">
 				<button class="btn btn-primary form-control" >Entrar</button>
 			</div>
+			<a href="Cadastro">Cadastre-se</a>
 			
 		</form>
 

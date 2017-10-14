@@ -2,8 +2,7 @@
 
 class LoginController extends Controller{
 
-
-    public function auth() {
+	public function auth() {
     	$dados = array('a', 'b', 'c');
 
     	$this->loadTemplate('login', $dados);
@@ -18,6 +17,10 @@ class LoginController extends Controller{
 		$_SESSION['usuario']['sobrenome'] = 'Thiago';
 
     }
+	public function cadastro() {
+		$this->loadTemplate('cadastro');
+	}
+	
 
 
 }

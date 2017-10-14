@@ -1,7 +1,7 @@
 <section>
 
 		<form class="form-vertical jumbotron" style="width: 250px; margin-top: 20px; padding: 10px; border: solid 2px #cacaca; float: right; margin-right: 10px;">
-			<legend>Acessar GT</legend>
+			<legend>Cadastro GT</legend>
 
 			<div class="form-group">
 				<label>Nome</label>
@@ -14,7 +14,7 @@
 			</div>
 			
 			<div class="form-group">
-				<button class="btn btn-primary form-control" >Entrar</button>
+				<button class="btn btn-primary form-control" >Cadastrar</button>
 			</div>
 			
 		</form>
