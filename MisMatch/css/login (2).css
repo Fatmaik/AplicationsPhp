@@ -1,0 +1,23 @@
+header{
+    margin-top: -35px;
+    height: 100px;
+    background-color: #D0E17D;
+}
+h1{
+    margin-left: 400px;
+    padding-top: 30px;
+    font-size: 48px;
+    color: #FF9933;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header form{
+    margin-top: -80px;
+    margin-left: 950px;
+    color: dimgray;
+}
+#labelSenha{
+    margin-left: 140px;
+}
+#msgLogin{
+    margin-top: 0px;
+}

@@ -1,0 +1,3 @@
+Nesse diretorio ficará arquivos referentes a funcões de auxilio (helpers)
+Exemplo: funções de conversões, tratamento de strings...
+

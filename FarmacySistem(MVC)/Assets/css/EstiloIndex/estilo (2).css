@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    background-image: url("bg.jpg");
+}
+header{
+    background-color:#66CD00;
+    margin-top: 200px;
+    margin-left: 520px;
+    font-size: 25px;
+    color: azure;
+    padding: 10px;
+    width: 680px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+article{
+    margin-top: -6px;
+    margin-left: 520px;
+    background-color: white;
+    width: 700px;
+    height: 200px;
+    
+
+}
+article img{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+

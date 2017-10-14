@@ -1,0 +1,647 @@
+/*========== INICIO DO ESTILO DO HEADER.PHP =============*/
+
+
+body{
+    margin: 0px;
+}
+/*inicio de estilo do header*/
+.cadPed{
+    background-color: #6B8E23;
+    height: 40px;
+}
+.pedidos{
+    color: white;
+    margin-left: 300px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.cadastro{
+    color: white;
+    margin-left: 300px;
+    padding-left: 180px;
+    margin-top: -19px;
+}
+/*fim do estilo do header*/
+
+/*inicio do estilo da Section*/
+
+    /*background-color: azure;*/
+
+.logo{
+    margin-left: 350px;
+    margin-top: 30px;
+}
+.campoBusca{
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    margin-left: 650px;
+    margin-top: -65px;
+    border: 3px solid silver;
+    border-radius: 20px;
+}
+.procura{
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 25pc;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    color: silver;
+    outline:none
+}
+.submit{
+    display: block;
+    margin-top: -43px;
+    margin-left: 450px;
+    height: 40px;
+    outline:none
+}
+
+#carrinhoElogin {
+    margin-left: 1200px;
+    margin-top: -50px;
+    width: 290px;
+    height: 50px;
+
+}
+#carrinhoElogin p:hover{
+    cursor: pointer;
+
+}
+#acount{
+    width: 60px;
+}
+#Plogin{
+    margin-left: 60px;
+    margin-top: -45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: silver;
+}
+#carrinho {
+    float: right;
+    margin-right: 70px;
+    margin-top: -58px;
+    width: 50px; 
+}
+#Pcarrinho{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 220px;
+    margin-top: -47px;
+    font-size: 14px;
+    color: silver;
+}
+
+ul{
+    margin-top: 40px;
+    margin-left: 400px;
+    list-style-type: none;
+    display: inline-block;  
+}
+li{
+    float: left;  
+}
+
+#medic{   
+    margin-top: 10px;
+    margin-left: 2px;
+    color: slategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#medic:hover{
+    color: #6B8E23;
+}
+
+.imgSau{
+    padding-left: 50px;
+    padding-top: 3px;
+}
+
+#saude{   
+    margin-top: 10px;
+    margin-left: -8px;
+    color: slategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#saude:hover{
+    color: #6B8E23;
+}
+
+#beleza{
+    margin-top: 10px;
+    margin-left: 3px;
+    color: slategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#beleza:hover{
+    color: #6B8E23;
+}
+
+.imgBel{
+    margin-top: 3px;
+    margin-left: 57px;
+}
+/*fim do estilo do Section*/
+
+/*começo do estilo do Article*/
+.article{
+background-color: rgba(247, 247, 247, 0.8)
+}
+
+#boxMedicamentos{
+    display: none;
+    margin-top: 10px;
+    margin: auto;
+    width: 890px;
+    background-color: white;
+}
+
+#boxMedicamentos img{
+    margin-top: 10px;
+}
+
+#boxMedicamentos p{   
+    margin-top: 0px;
+    padding: 20px;
+    margin-left: 0px;
+    display: inline-block; 
+    width:254px;  
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#boxMedicamentos p:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+#boxSaude{
+    display: none;
+    margin-top: 10px;
+    margin: auto;
+    width: 890px;
+    background-color: white;
+}
+
+#boxSaude img{
+    margin-top: 10px;
+}
+
+#boxSaude p{   
+    margin-top: 0px;
+    padding: 20px;
+    margin-left: 0px;
+    display: inline-block; 
+    width: 254px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#boxSaude p:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+#boxBeleza{
+    display: none;
+    margin-top: 10px;
+    margin: auto;
+    width: 890px;
+    background-color: white;
+}
+
+#boxBeleza img{
+    margin-top: 10px;
+}
+
+#boxBeleza p{   
+    margin-top: 0px;
+    padding: 20px;
+    margin-left: 0px;
+    display: inline-block; 
+    width: 254px;  
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#boxBeleza p:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+#hr{
+    height: 4px;
+    background-color: #6B8E23;
+}
+
+.span{
+    background-color: aqua;
+}
+
+/*fim do estilo do Menu*/
+
+/*inicio do estilo de cadastro*/
+#loginCadastro {
+    display: none;
+    margin-top: -270px;
+    position: fixed;
+    background-color: rgba(105, 105, 105, 0.8);
+    width: 100%;
+    height: 960px;
+}
+#cadastro{
+    /*display: none;*/
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    margin-left: 450px;
+    margin-top: 100px;
+}
+#cadastro img{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+#form{
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 14px;
+    
+}
+#form input{
+    width: 390px;
+    height: 30px;
+    font-size: 16px;
+    color: #8B8989;
+    padding-left: 10px;
+}
+#cadastro h2{
+    color: #6B8E23;
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+#form #inputTel{
+    width: 190px;
+}
+
+#form #inputresenha{
+    margin-top: -70px;
+    margin-left: 220px;
+    width: 190px;
+}
+
+#form #inputNasc{
+    margin-top: -70px;
+    margin-left: 220px;
+    width: 190px;
+}
+
+#form .inputArea{
+    width: 170px;
+}
+
+#inputSexo #sexo{
+    height: 40px;
+    width: 175px;
+}
+
+#inputSexo{
+    margin-top: -55px;
+    margin-left: 220px;
+    width: 190px;
+}
+#form #cadastrar{
+    width: 395px;
+    color: white;
+    background-color: #6B8E23;
+}
+.nome{
+    float: left;
+    margin-left: 80;
+    
+}
+span{
+    color: red;
+}
+/*fim estilo de cadastro*/
+
+
+/*inicio estilo de login*/
+#login{
+    background-color: #6B8E23;
+    width: 500px;
+    height: 600px;
+    margin-left: 950px;
+    margin-top: -600px;
+}
+
+#login img{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+#form2 h2{
+    color: white;
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+#form2{
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 14px;
+    
+}
+#form2 label{
+    color: white;
+}
+#form2 input{
+    width: 390px;
+    height: 30px;
+    font-size: 16px;
+    color: #8B8989;
+    padding-left: 10px;
+}
+
+#form2 #logar{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: #6B8E23;
+}
+
+#login a{
+    color: white;
+    margin-left: 50px;
+}
+
+#form2 #closePag{
+    float: left;
+    margin-top: -55px;
+    margin-left: 410px;
+}
+/*========== FIM DO ESTILO DO HEADER.PHP =============*/
+
+/*estilo para teça de 15*/
+
+/*estilo pra tela de 18*/
+@media only screen and (max-width: 1680px) {
+    .cadPed{
+        width: 100%;
+        max-width: 1680px;
+    }
+
+    .logo{
+        margin-left: 230px;
+    }
+
+    .campoBusca{
+        margin-left: 480px;
+    }
+
+    #carrinhoElogin {
+        margin-left: 1050px;
+    
+    }
+    
+    ul{
+        margin-left: 300px; 
+    }
+    
+    #boxMedicamentos{
+        margin: auto;
+    }
+
+    #boxSaude{
+        margin: auto;
+    }
+
+    #boxBeleza{
+        margin: auto;
+    }
+    
+    #loginCadastro {
+        width: 100%;
+        max-width: 1680px;
+    }
+
+    #cadastro{
+        margin-left: 300px;
+    }
+    
+    #login{
+        margin-left: 800px;
+    }
+}
+
+/*estilo para teça de 15*/
+@media only screen and (max-width:1400px) {
+    
+    .cadPed{
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .logo{
+        margin-left: 150px;
+    }
+
+    .campoBusca{
+        margin-left: 400px;
+    }
+
+    .procura{
+        margin-left: 20px;
+    }
+
+    #carrinhoElogin {
+        margin-left: 940px;
+    
+    }
+    
+    ul{
+        margin-left: 300px; 
+    }
+    
+    #boxMedicamentos{
+        margin: auto;
+    }
+
+    #boxSaude{
+        margin: auto;
+    }
+
+    #boxBeleza{
+        margin: auto;
+    }
+    
+    #loginCadastro {
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    #cadastro{
+        margin-top: 50px;
+        margin-left: 170px;
+    }
+    
+    #login{
+        margin-left: 670px;
+    }
+
+}
+
+@media only screen and (max-width : 1295px) {
+    .cadPed{
+        width: 100%;
+        max-width: 1265px;
+    }
+
+    .logo{
+        width: 180px;
+        margin-left: 80px;
+    }
+
+    .campoBusca{
+        margin-left: 320px;
+    }
+
+    #carrinhoElogin {
+        margin-left: 860px;
+    
+    }
+    
+    ul{
+        margin-left: 300px; 
+    }
+    
+    #boxMedicamentos{
+        margin: auto;
+    }
+
+    #boxSaude{
+        margin: auto;
+    }
+
+    #boxBeleza{
+        margin: auto;
+    }
+    
+    #loginCadastro {
+        width: 100%;
+        max-width: 1265px;
+    }
+
+    #cadastro{
+        margin-left: 140px;
+    }
+    
+    #login{
+        margin-left: 630px;
+    }
+}
+
+/*estilo para teça de 12*/
+@media only screen and (max-width:1187px) {
+    
+    .cadPed{
+        width: 100%;
+        max-width: 1155px;
+    }
+
+    .logo{
+        margin-left: 170px;
+        width: 150px;
+    }
+
+    .campoBusca{
+        margin-left: 330px;
+        margin-top: -50px;
+        width: 400px;
+        height: 35px;
+    }
+
+    .procura{
+        margin-left: 20px;
+        margin-top: 4px;
+        width: 300px;
+        height: 20px;
+        font-size: 14px;
+    }
+    .submit{
+        width: 30px;
+        height: 25px;
+        margin-left: 360px;
+        margin-top: -23px;
+    }
+
+    #carrinhoElogin {
+        margin-left: 740px;
+    
+    }
+
+    #acount{
+        width: 40px;
+        margin-top:10px;
+    }
+
+    #Plogin{
+        font-size: 12px;
+        margin-left: 40px;
+        margin-top: -35px;
+    }
+
+    #carrinho{
+        float: left;
+        width: 38px;
+        margin-left: 105px;
+        margin-top: -48px;
+    }
+    
+    #Pcarrinho{
+        font-size: 12px;
+        margin-left: 145px;
+        margin-top: -40px;
+    }
+    
+    ul{
+        margin-left: 300px; 
+    }
+    
+    #boxMedicamentos{
+        margin: auto;
+    }
+
+    #boxSaude{
+        margin: auto;
+    }
+
+    #boxBeleza{
+        margin: auto;
+    }
+    
+    #loginCadastro {
+        width: 100%;
+        max-width: 1187px;
+    }
+
+    #cadastro{
+        margin-top: 80px;
+        margin-left: 113px;
+    }
+    
+    #login{
+        margin-left: 602px;
+    }
+
+    
+
+}

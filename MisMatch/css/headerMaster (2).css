@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    
+}
+
+h5{
+    margin-left: 400px;
+    padding-top: 13px;
+    font-size: 18px;
+    color: #FF9933;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+header{
+    margin-top: -35px;
+    height: 47px;
+    background-color: #D0E17D;
+}
+#boxBusca{
+    float: left;
+    margin-left: 500px;
+    margin-top: -54px;
+    background-color: white;
+    border:solid 6px rgba(47, 79, 79, 0.8);
+    border-radius:10px;
+    width:280px;
+    
+}
+#busca{
+    float: right;
+    margin-top: -20px;
+    width: 75px;
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    margin-top: 0px;
+    font-size:16px;
+    border:none;
+    height:18px;
+    width:217px;
+}
+#headerUser{
+    float: right;
+    margin-right: 600px;
+    margin-top: -80px;
+}
+#nome{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+#botaoEditar{
+    float: right;
+    margin-top: -52px;
+    margin-right: -330px;
+    cursor: pointer;
+}
