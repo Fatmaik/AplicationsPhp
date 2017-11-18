@@ -1,0 +1,47 @@
+######## criacao do banco ######### 
+create database cdcamboriu
+default character set utf8
+default collate utf8_general_ci;
+
+
+####### tabela usuarios ###########
+CREATE TABLE usuarios (
+id_usuario INT NOT NULL AUTO_INCREMENT,
+user VARCHAR(30),
+password VARCHAR(100),
+data_cadastro date,
+nivel int,
+PRIMARY KEY(id_usuario)
+)DEFAULT CHARSET = utf8;
+
+
+CREATE TABLE diarias (
+id_diaria INT NOT NULL AUTO_INCREMENT,
+servidor VARCHAR(100),
+estado_destino varchar(100),
+cidade_destino varchar(100),
+distancia_destino float,
+data_saida datetime,
+data_retorno datetime,
+valor_total decimal(10,2),
+data_diaria date,
+horas_totais float,
+confirmacao char(4),
+PRIMARY KEY(id_diaria)
+)DEFAULT CHARSET = utf8;
+
+CREATE TABLE ufms (
+id_ufm INT NOT NULL AUTO_INCREMENT,
+servidor VARCHAR(100),
+estado_destino varchar(100),
+cidade_destino varchar(100),
+distancia_destino float,
+data_saida datetime,
+data_retorno datetime,
+data_diaria date,
+ufm int,
+valor_total varchar(100),
+tempo_total varchar(100),
+confirmacao char(4),
+PRIMARY KEY(id_ufm)
+)DEFAULT CHARSET = utf8;
