@@ -9,14 +9,9 @@ class HomeController extends Controller{
     		header('Location:'.BASE_URL.'login/auth');
     	}
     }
-<<<<<<< HEAD
-    public function index() {
-  
-        
-    }
+	
     public function teste(){
         echo 'teste';
     }
-=======
->>>>>>> 29abccbe22a36a758f6e1c5e896684ab21058853
+
 }
